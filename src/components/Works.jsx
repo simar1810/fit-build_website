@@ -9,7 +9,7 @@ export default function Works() {
     },
     {
       id: "02",
-      title: "Get Instant Access to Sanraj Wellness Club",
+      title: "Get Instant Access to Fit & Build",
       desc: "Once you sign up, you'll receive a direct login link to our app—no extra steps needed!",
     },
     {
@@ -25,9 +25,10 @@ export default function Works() {
   ];
 
   return (
-    <section className="max-w-[1400px] mx-auto bg-white py-16 px-6 md:px-20">
+    <div className="bg-[#E4DFD3]">
+    <section className="max-w-350 mx-auto bg-[#E4DFD3] py-16 px-6 md:px-20">
       <div className="max-w-5xl mx-auto text-center mb-4 lg:mb-10">
-        <h2 className="text-2xl md:text-3xl font-bold text-[#212121]">
+        <h2 className="text-2xl md:text-3xl font-extrabold text-[#212121]">
           How its Works
         </h2>
         <p className="text-[#363535] mt-2 text-lg md:text-xl font-semibold">
@@ -36,7 +37,7 @@ export default function Works() {
       </div>
 
       <div className="relative mx-w-[1100px] mx-auto">
-        <div className="hidden xl:block absolute left-1/2 -translate-x-1/2 w-1 my-16 h-[65vh] bg-[#C5C5C5] rounded-2xl px-[3px]"></div>
+        <div className="hidden xl:block absolute left-1/2 -translate-x-1/2 w-1 my-16 h-[65vh] bg-[#C5C5C5] rounded-2xl px-0.75"></div>
 
         <div className="space-y-4">
           {steps.map((step, index) => (
@@ -47,9 +48,9 @@ export default function Works() {
               }`}
             >
               <div className="hidden lg:flex absolute left-1/2 -translate-x-1/2 flex-col items-center">
-                <div className="w-8 h-8 bg-[#01904B] border-4 border-white rounded-full"></div>
+                <div className="w-8 h-8 bg-[#3D3838] border-4 border-[#E4DFD3] rounded-full"></div>
                 <span
-                  className={`absolute top-1/2 -translate-y-1/2 text-7xl font-bold text-gray-800 ${
+                  className={`absolute top-1/2 -translate-y-1/2 text-7xl font-extrabold text-gray-800 ${
                     index % 2 === 0 ? "left-32" : "right-32"
                   }`}
                   style={{
@@ -65,20 +66,20 @@ export default function Works() {
               <div className="relative w-full lg:w-lg lg:mb-8 xl:mb-0">
                 {/* Dark background shadow shape - hidden on small screens */}
                 <div
-                  className={`absolute bottom-[-8px] md:bottom-[-15px] ${
-                    index % 2 === 0 ? "left-0 md:left-[-15px]" : "right-0 md:right-[-15px]"
-                  } px-40 w-full lg:w-auto lg:px-60 rounded-3xl py-14 lg:py-16 bg-[#424242]`}
+                  className={`absolute -bottom-2 md:-bottom-3.75 ${
+                    index % 2 === 0 ? "left-0 md:-left-3.75" : "right-0 md:-right-3.75"
+                  } px-40 w-full lg:w-auto lg:px-60 py-14 lg:py-16 bg-[#424242]`}
                 ></div>
 
                 <div
-                  className={`relative bg-white shadow-lg rounded-2xl p-6 border text-center lg:text-left
+                  className={`relative bg-white p-6 border text-center lg:text-left
                     ${index % 2 === 0 ? "lg:pl-5" : "lg:pl-10"} 
                     mt-6 md:mt-12 lg:mt-0`}
                 >
-                  <h3 className="text-sm sm:text-xl md:text-2xl lg:text-xl font-bold text-gray-900">
+                  <h3 className="text-sm sm:text-xl md:text-2xl lg:text-lg font-extrabold text-gray-900">
                     {step.title}
                   </h3>
-                  <p className="text-gray-600 font-semibold text-sm sm:text-lg mt-2 lg:w-sm">
+                  <p className="text-gray-600 font-semibold text-sm sm:text-base xl:text-lg 2xl:text-base mt-2 lg:w-sm">
                     {step.desc}
                   </p>
                 </div>
@@ -87,6 +88,7 @@ export default function Works() {
           ))}
         </div>
       </div>
-    </section>
+      </section>
+    </div>
   );
 }
