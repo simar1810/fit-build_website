@@ -14,13 +14,13 @@ const Hero = () => {
       >
         <section className="relative max-w-275 flex flex-col grow px-5 sm:px-10 lg:px-20 xl:px-8 lg:flex-row items-center justify-center lg:items-end lg:justify-between mx-auto xl:w-full w-full">
           <div className="absolute max-w-2xl mx-auto z-10 lg:pb-18 text-center lg:text-left xl:pb-28 2xl:pb-20 px-3 sm:px-0">
-            <div className="relative flex justify-center lg:justify-start items-center mb-10 lg:mb-28 xl:mb-24 mt-4 lg:mt-6">
+            <div className="relative flex justify-center lg:justify-start items-center mb-10 lg:mb-28 2xl:mb-24 mt-4 lg:mt-6">
               <Image
                 src="/logo-app.png"
                 alt="fit&build Logo"
                 width={250}
                 height={250}
-                className="w-48 sm:w-64 md:w-[30vw] lg:w-40 lg:absolute lg:-left-5 lg:-top-12.5 xl:-left-7.5 xl:-top-17.5 xl:w-[14vw] 2xl:w-[12vw] 2xl:-top-20"
+                className="w-48 sm:w-64 md:w-[30vw] lg:w-40 lg:absolute lg:-left-5 lg:-top-12.5 xl:-left-7.5 xl:-top-17.5 xl:w-48 2xl:w-[12vw] 2xl:-top-20"
               />
             </div>
 
@@ -31,7 +31,7 @@ const Hero = () => {
               </span>
             </h1>
 
-            <p className="mt-3 sm:mt-4 md:mt-6 lg:mt-4 w-full sm:w-[85%] md:w-[90%] mx-auto lg:w-[65%] xl:w-[60%] 2xl:w-[65%] lg:mx-0 text-sm md:text-2xl lg:text-lg text-gray-800">
+            <p className="mt-3 sm:mt-4 md:mt-6 lg:mt-4 xl:mt-2 2xl:mt-4 w-full sm:w-[85%] md:w-[90%] mx-auto lg:w-[65%] xl:w-[69%] 2xl:w-[65%] lg:mx-0 text-sm md:text-2xl lg:text-lg text-gray-800">
               Transform your health with customized nutrition, intelligent tools,
               and trusted expert advice
             </p>
@@ -42,13 +42,13 @@ const Hero = () => {
             </button>
           </div>
 
-          <div className="flex justify-center items-end absolute lg:right-16 xl:right-0 lg:-bottom-17.5 xl:-bottom-25 2xl:-bottom-20">
+          <div className="flex justify-center items-end absolute lg:right-16 xl:right-0 lg:-bottom-17.5 xl:-bottom-22 2xl:-bottom-20">
             <Image
               src="/boy-rope.png"
               alt="Wellness Yoga"
               width={500}
               height={500}
-              className="hidden lg:flex lg:w-sm xl:w-[40vw] 2xl:w-[30vw]"
+              className="hidden lg:flex lg:w-sm xl:w-100 2xl:w-[30vw]"
             />
           </div>
         </section>
