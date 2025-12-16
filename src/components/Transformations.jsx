@@ -42,12 +42,12 @@ const Transformations = () => {
   }, [visibleCards, transformations.length]);
 
   return (
-    <section className="pt-6 md:pt-10 pb-24 px-4 sm:px-10 md:px-20">
-      <div className="max-w-[1200px] mx-auto relative">
-        <p className="text-black font-bold text-2xl sm:text-3xl md:text-4xl text-center mb-3">
+    <section className="pt-6 md:pt-10 pb-24 px-4 sm:px-10 md:px-20 bg-linear-tr from-[#E4DFD3] to-white">
+      <div className="max-w-300 mx-auto relative">
+        <p className="text-[#2B2929] font-extrabold text-2xl sm:text-3xl md:text-4xl text-center mb-3">
           Wellness from Our Thriving Community
         </p>
-        <p className="text-center text-sm sm:text-base md:text-lg text-[#404040] font-semibold max-w-[900px] mx-auto">
+        <p className="text-center text-sm sm:text-base md:text-lg text-[#404040] font-normal max-w-225 mx-auto">
           Experience the best wellness transformations through our community-driven support and personal coaching
         </p>
 
@@ -62,7 +62,7 @@ const Transformations = () => {
               {transformations.map((t) => (
                 <div
                   key={t.id}
-                  className={`rounded-3xl relative flex overflow-hidden flex-shrink-0 ${
+                  className={`rounded-3xl relative flex overflow-hidden shrink-0 ${
                     visibleCards === 1
                       ? "w-full"
                       : visibleCards === 2
@@ -75,23 +75,23 @@ const Transformations = () => {
                     alt="before"
                     width={500}
                     height={500}
-                    className="w-1/2 h-80 sm:h-72 md:h-[400px] object-cover"
+                    className="w-1/2 h-80 sm:h-72 md:h-100 object-cover"
                   />
                   <Image
                     src={t.after}
                     alt="after"
                     width={500}
                     height={500}
-                    className="w-1/2 h-80 sm:h-72 md:h-[400px] object-cover"
+                    className="w-1/2 h-80 sm:h-72 md:h-100 object-cover"
                   />
 
                  
-                  <div className="absolute rounded-full bg-[#BBD63C] px-6 sm:px-8 md:px-10 py-2 sm:py-3 left-1/2 -translate-x-1/2 bottom-3 sm:bottom-4 text-black flex items-center justify-between gap-3 sm:gap-5 md:gap-8 text-xs sm:text-sm md:text-base">
-                    <p className="font-medium">Before</p>
-                    <div className="bg-white text-black px-2 py-1 rounded-lg">
+                  <div className="absolute bg-[#2B2929] px-4 sm:px-6 md:px-8 py-2 sm:py-3 left-1/2 -translate-x-1/2 bottom-3 sm:bottom-4 text-[#C82909] flex items-center justify-between gap-3 sm:gap-5 md:gap-8 text-xs sm:text-sm md:text-base">
+                    <p className="font-extrabold">Before</p>
+                    <div className="bg-white text-[#2B2929] px-2 py-1 rounded-lg">
                       <p className="text-[10px] sm:text-xs">Transformation</p>
                     </div>
-                    <p className="font-medium">After</p>
+                    <p className="font-extrabold">After</p>
                   </div>
                 </div>
               ))}
@@ -105,8 +105,8 @@ const Transformations = () => {
             <button
               key={i}
               onClick={() => setCurrentIndex(i)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                i === currentIndex ? "bg-[#BBD63C]" : "bg-gray-300"
+              className={`rounded-full transition-all duration-300 ${
+                i === currentIndex ? "w-8 h-2 bg-[#C82909]" : "w-3 h-2 bg-gray-300"
               }`}
             ></button>
           ))}

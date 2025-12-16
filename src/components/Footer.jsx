@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { FaInstagram } from "react-icons/fa";
-import { LuFacebook } from "react-icons/lu";
+// import { LuFacebook } from "react-icons/lu";
 import { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -17,8 +17,8 @@ export default function Footer() {
   const [loading, setLoading] = useState(false);
 
   const socialLinks = [
-    { icon: FaInstagram, url: "https://www.instagram.com/sanrajwellness/?next=%2F&hl=en" },
-    { icon: LuFacebook, url: "https://www.facebook.com/profile.php?id=61558809396085" },
+    { icon: FaInstagram, url: "https://www.instagram.com/jehangir.bodybuilding/" },
+    // { icon: LuFacebook, url: "https://www.facebook.com/profile.php?id=61558809396085" },
   ];
 
   const handleChange = (e) => {
@@ -58,10 +58,10 @@ export default function Footer() {
     }
   };
   return (
-    <footer className="relative bg-gradient-to-b from-[#BBD63C] via-[#03311bd8] to-[#067a42] w-full pb-2 rounded-t-xl">
+    <footer className="relative bg-linear-to-b from-[#1a1a19] to-[#42423f] w-full pb-2 rounded-t-xl">
       <ToastContainer position="top-center" autoClose={2500} hideProgressBar />
       <div className="mx-6 sm:mx-10 md:mx-20 2xl:mx-40 py-10 sm:py-14 lg:py-16 relative z-10">
-        <h1 className="mb-8 sm:mb-10 text-[#212121] text-2xl sm:text-3xl lg:text-4xl font-bold text-center leading-tight">
+        <h1 className="mb-8 sm:mb-10 text-[#bfbfb9] text-2xl sm:text-3xl lg:text-4xl font-bold text-center leading-tight">
           Let’s Know You Better!
         </h1>
 
@@ -77,7 +77,7 @@ export default function Footer() {
             { label: "What is your goal", type: "text", placeholder: "Enter your goal", name: "goal" },
           ].map(({ label, type, placeholder, name }, i) => (
             <div key={i}>
-              <label className="text-base sm:text-lg font-semibold text-[#2E2D2D]">
+              <label className="text-base sm:text-lg font-semibold text-[#bfbfb9]">
                 {label}
               </label>
               <input
@@ -97,7 +97,7 @@ export default function Footer() {
             type="submit"
             disabled={loading}
             onClick={handleSubmit}
-            className={`px-8 sm:px-10 lg:px-12 py-2.5 sm:py-3 rounded-full text-white font-semibold text-base sm:text-lg bg-[#424242] shadow-md shadow-gray-600 transition-all ${
+            className={`px-8 sm:px-10 lg:px-12 py-2.5 sm:py-3 text-white font-semibold text-base sm:text-lg bg-[#424242] shadow-md shadow-gray-600 transition-all ${
               loading ? "opacity-70 cursor-not-allowed" : "hover:scale-105"
             }`}
           >
@@ -108,18 +108,18 @@ export default function Footer() {
 
       {/* Lower section remains same */}
       <div className="mx-6 sm:mx-10 md:mx-20 2xl:mx-40 flex flex-col md:flex-row items-center md:items-start justify-between gap-10 md:gap-0 relative z-10">
-        <div className="border-[1px] border-[#FFFFFF6B] absolute md:left-1/2 md:-translate-x-1/2 md:h-full hidden md:block"></div>
+        <div className="border border-[#FFFFFF6B] absolute md:left-1/2 md:-translate-x-1/2 md:h-full hidden md:block"></div>
 
         <div className="text-white flex flex-col justify-start items-center md:items-start text-center md:text-left max-w-3xl md:w-2xs lg:w-xl relative">
           <Image
-            src="/client-assets/swc_logo.png"
+            src="/logo-app.png"
             alt="footer-left"
             width={400}
             height={400}
             className="w-36 sm:w-44 lg:w-52"
           />
           <p className="font-medium mt-4 sm:mt-5 md:mt-0 text-sm sm:text-base xl:text-lg leading-relaxed text-center md:text-left max-w-sm lg:max-w-md xl:max-w-lg">
-            At Sanraj Wellness, we believe in empowering every individual to live a balanced,
+            At Fit & Build, we believe in empowering every individual to live a balanced,
             healthy, and fulfilled life. Through expert guidance, nutrition, and a supportive
             community, we help you achieve lasting transformation—inside and out.
           </p>
@@ -128,10 +128,10 @@ export default function Footer() {
         <div className="flex flex-col text-white items-center md:items-start justify-center text-center md:text-left">
           <p className="text-base sm:text-lg font-bold mb-3 md:mb-5">Contact Us</p>
           <p className="mb-2 md:mb-4 text-sm sm:text-base">
-            <span className="font-bold">Email</span> : szalte111@gmail.com
+            <span className="font-bold">Email</span> : jehangirranderia@gmail.com 
           </p>
           <p className="mb-3 md:mb-5 text-sm sm:text-base">
-            <span className="font-bold">Mobile No.</span> : +91 - 8888099399
+            <span className="font-bold">Mobile No.</span> : +91 - 9821448048
           </p>
           <div className="flex items-center justify-start gap-3 mb-4 md:mb-6">
             {socialLinks.map(({ icon: Icon, url }, i) => (
