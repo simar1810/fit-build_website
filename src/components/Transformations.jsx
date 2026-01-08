@@ -51,10 +51,10 @@ const Transformations = () => {
     <section className="pt-6 md:pt-10 pb-24 px-4 sm:px-10 md:px-20 bg-white">
       <div className="max-w-7xl mx-auto relative">
         <p className="text-[#2B2929] font-extrabold text-2xl sm:text-3xl md:text-4xl text-center mb-3">
-          Wellness from Our Thriving Community
+          Real People. Real Discipline. Real Results.
         </p>
         <p className="text-center text-sm sm:text-base md:text-lg text-[#404040] font-normal max-w-3xl mx-auto">
-          Experience the best wellness transformations through our community-driven support and personal coaching
+         No stock images. No fake testimonials. Just honest transformations earned through consistency and correct guidance
         </p>
 
         <div className="relative mt-10">
