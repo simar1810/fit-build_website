@@ -4,16 +4,16 @@ import FloatingSection from './FloatingSection'
 
 const Hero = () => {
   return (
-    <main className="flex flex-col min-h-screen text-[#3D3838] bg-[#D2CAB6] overflow-x-hidden relative">
+    <main className="flex flex-col min-h-[50vh] lg:min-h-screen text-[#3D3838] bg-[#D2CAB6] overflow-x-hidden relative pt-28 lg:pt-38">
       {/* <div>
           <Image src="/page_effect_bg.png" alt='paper_effect' width={500} height={500} className=' w-full h-full inset-0 z-10 fixed opacity-20'/>
         </div> */}
       <div
-        className="flex flex-col justify-between grow bg-cover bg-center lg:pt-14"
+        className="flex flex-col justify-between grow bg-cover bg-center lg:pt-14 "
       // style={{ backgroundImage: "url('/bg-frame.png')" }}
       >
-        <section className="relative max-w-275 flex flex-col grow px-5 sm:px-10 lg:px-20 xl:px-8 lg:flex-row items-center justify-center lg:items-end lg:justify-between mx-auto xl:w-full w-full">
-          <div className="absolute max-w-2xl mx-auto z-10 lg:pb-18 text-center lg:text-left xl:pb-28 2xl:pb-20 px-3 sm:px-0">
+        <section className="relative max-w-275 flex flex-col grow px-5 sm:px-10 lg:px-20 xl:px-8 lg:flex-row items-center justify-start lg:justify-between mx-auto xl:w-full w-full py-12 lg:py-0">
+          <div className="relative lg:absolute lg:-top-12 max-w-2xl mx-auto z-10 lg:pb-18 text-center lg:text-left xl:pb-28 2xl:pb-20 px-3 sm:px-0 mb-10 lg:mb-0">
             {/* <div className="relative flex justify-center lg:justify-start items-center mb-6 lg:mb-10 2xl:mb-12 mt-4 lg:mt-6">
               <Image
                 src="/logo-app.png"
@@ -23,6 +23,8 @@ const Hero = () => {
                 className="w-48 sm:w-64 md:w-[30vw] lg:w-40 lg:absolute lg:-left-5 lg:-top-12.5 xl:-left-7.5 xl:-top-17.5 xl:w-48 2xl:w-[12vw] 2xl:-top-20"
               />
             </div> */}
+
+
 
             <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-extrabold leading-tight text-[#2B2929]">
               Transform Your Body, Health & Confidence — <br />

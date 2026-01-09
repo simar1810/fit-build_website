@@ -12,8 +12,11 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            setScrolled(window.scrollY > 50);
+            const currentScrollY = window.scrollY;
+            // Change background after scrolling 20px
+            setScrolled(currentScrollY > 20);
         };
+
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
@@ -27,12 +30,13 @@ const Navbar = () => {
 
     return (
         <header
-            className="sticky top-0 w-full z-50 transition-all duration-300 bg-[#1a1a19] shadow-lg py-2"
+            className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-[#1a1a19] shadow-lg py-1" : "bg-transparent py-2"
+                }`}
         >
             <div className="max-w-7xl mx-auto px-6 md:px-10 flex justify-between items-center">
                 <Link href="/">
 
-                    <div className={`relative transition-all duration-300 w-28`}>
+                    <div className={`relative transition-all duration-300 w-24`}>
                         <Image
                             src="/logo-app.png"
                             alt="Fit & Build"
@@ -49,7 +53,7 @@ const Navbar = () => {
                             href={link.href}
                             className={`text-sm font-bold uppercase tracking-wider transition-colors ${pathname === link.href
                                 ? "text-[#C82909]"
-                                : "text-[#bfbfb9] hover:text-white"
+                                : "text-white/70 hover:text-white"
                                 }`}
                         >
                             {link.name}
