@@ -58,7 +58,7 @@ export default function Footer() {
     }
   };
   return (
-    <footer className="relative bg-linear-to-b from-[#1a1a19] to-[#42423f] w-full pb-2 rounded-t-xl">
+    <footer className="relative bg-linear-to-b from-[#1a1a19] to-[#42423f] w-full pb-2">
       <ToastContainer position="top-center" autoClose={2500} hideProgressBar />
       <div className="mx-6 sm:mx-10 md:mx-20 2xl:mx-40 py-10 sm:py-14 lg:py-16 relative z-10">
         <h1 className="mb-8 sm:mb-10 text-[#bfbfb9] text-2xl sm:text-3xl lg:text-4xl font-bold text-center leading-tight">
@@ -97,9 +97,8 @@ export default function Footer() {
             type="submit"
             disabled={loading}
             onClick={handleSubmit}
-            className={`px-8 sm:px-10 lg:px-12 py-2.5 sm:py-3 text-white font-semibold text-base sm:text-lg bg-[#424242] shadow-md shadow-gray-600 transition-all ${
-              loading ? "opacity-70 cursor-not-allowed" : "hover:scale-105"
-            }`}
+            className={`px-8 sm:px-10 lg:px-12 py-2.5 sm:py-3 text-white font-semibold text-base sm:text-lg bg-[#424242] shadow-md shadow-gray-600 transition-all ${loading ? "opacity-70 cursor-not-allowed" : "hover:scale-105"
+              }`}
           >
             {loading ? "Submitting..." : "Submit"}
           </button>
@@ -128,7 +127,7 @@ export default function Footer() {
         <div className="flex flex-col text-white items-center md:items-start justify-center text-center md:text-left">
           <p className="text-base sm:text-lg font-bold mb-3 md:mb-5">Contact Us</p>
           <p className="mb-2 md:mb-4 text-sm sm:text-base">
-            <span className="font-bold">Email</span> : jehangirranderia@gmail.com 
+            <span className="font-bold">Email</span> : jehangirranderia@gmail.com
           </p>
           <p className="mb-3 md:mb-5 text-sm sm:text-base">
             <span className="font-bold">Mobile No.</span> : +91 - 9821448048

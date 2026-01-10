@@ -1,20 +1,25 @@
-import Footer from "@/components/Footer";
-import Guide from "@/components/Guide";
 import Hero from "@/components/Hero";
-import JoinUs from "@/components/JoinUs";
-import ReliablePartner from "@/components/ReliablePartner";
+import AuthoritySnapshot from "@/components/AuthoritySnapshot";
 import Transformations from "@/components/Transformations";
-import Works from "@/components/Works";
+import Qualification from "@/components/Qualification";
+import ProgramsOverview from "@/components/ProgramsOverview";
+import Process from "@/components/Process";
+import Testimonials from "@/components/Testimonials";
+import FinalCTA from "@/components/FinalCTA";
+import Footer from "@/components/Footer";
+
 export default function Home() {
   return (
     <>
       <Hero />
-      <Works />
-      <ReliablePartner/>
-      <Guide />
-      <JoinUs />
-      <Transformations/>
-      <Footer />
+      <AuthoritySnapshot />
+      <Transformations />
+      <Qualification />
+      <ProgramsOverview />
+      <Process />
+      <Testimonials />
+      <FinalCTA />
+      {/* <Footer /> */}
     </>
   );
 }
