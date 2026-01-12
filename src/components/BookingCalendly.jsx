@@ -1,11 +1,26 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
+import { useState, useEffect } from "react";
+
+
+import { useSearchParams } from "next/navigation";
+import BookingModal from "./BookingModal";
 
 const BookingCalendly = () => {
+    const searchParams = useSearchParams();
+    const [isPaid, setIsPaid] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    useEffect(() => {
+        const paid = searchParams.get("paid");
+        if (paid === "true") {
+            setIsPaid(true);
+        }
+    }, [searchParams]);
 
     return (
         <section className="bg-[#1a1a19] text-[#f4f2f2] py-24 px-6 md:px-20 text-center">
-            <div className="max-w-5xl mx-auto">
+            <div className=" mx-auto">
                 <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 leading-tight">
                     Book Your Strategy Call Below
                 </h2>
@@ -16,18 +31,32 @@ const BookingCalendly = () => {
                     Reschedules without notice may result in cancellation.
                 </p>
 
-                <div className="w-full min-h-[600px] bg-white rounded-lg flex items-center justify-center text-[#2B2929] mb-16">
-                    <div className="text-center p-10">
-                        <p className="text-xl font-bold mb-4">[Calendly Embed Here]</p>
-                        <p className="text-gray-600">
-                            Please insert your Calendly inline embed code or component here.
-                            <br />
-                            Example: <code>&lt;InlineWidget url="https://calendly.com/your-link" /&gt;</code>
-                        </p>
+                <div className="w-full min-h-[700px] mb-16 relative">
+                    <div className={!isPaid ? "blur-md pointer-events-none select-none" : ""}>
+                        <iframe
+                            src="https://calendar.google.com/calendar/embed?src=en.indian%23holiday%40group.v.calendar.google.com&ctz=Asia%2FKolkata"
+                            style={{ border: 0 }}
+                            width="100%"
+                            height="700"
+                            frameBorder="0"
+                            scrolling="no"
+                            className="rounded-lg shadow-sm bg-white"
+                        ></iframe>
                     </div>
+
+                    {!isPaid && (
+                        <div className="absolute inset-0 flex items-start justify-center pt-32 z-10">
+                            <button
+                                onClick={() => setIsModalOpen(true)}
+                                className="px-10 py-4 bg-[#C82909] text-white text-lg font-bold rounded-md shadow-lg hover:bg-[#a02006] transition-all transform hover:-translate-y-1"
+                            >
+                                Book a Free Strategy Call
+                            </button>
+                        </div>
+                    )}
                 </div>
 
-                <div className="max-w-3xl mx-auto">
+                <div className=" mx-auto">
                     <p className="text-xl md:text-2xl font-bold text-[#E4DFD3] mb-4">
                         Coaching works only when effort meets structure.
                     </p>
@@ -36,6 +65,8 @@ const BookingCalendly = () => {
                     </p>
                 </div>
             </div>
+
+            <BookingModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </section>
     );
 };

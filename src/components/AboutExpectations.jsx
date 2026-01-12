@@ -5,7 +5,7 @@ import { FaExclamationTriangle } from "react-icons/fa";
 const AboutExpectations = () => {
     return (
         <section className="bg-[#E4DFD3] text-[#2B2929] py-20 px-6 md:px-20">
-            <div className="max-w-4xl mx-auto text-center">
+            <div className=" mx-auto text-center">
                 <div className="flex justify-center mb-6">
                     <FaExclamationTriangle className="text-[#C82909] text-4xl" />
                 </div>

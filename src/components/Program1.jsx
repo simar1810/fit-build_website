@@ -6,16 +6,16 @@ import { FaCheck } from "react-icons/fa";
 const Program1 = () => {
     return (
         <section className="bg-white text-[#2B2929] py-20 px-6 md:px-20 border-b border-gray-200">
-            <div className="max-w-5xl mx-auto">
+            <div className=" mx-auto">
                 
                 <div className="mb-12">
                     <span className="text-[#C82909] font-bold tracking-wider uppercase text-sm md:text-base mb-2 block">
                         Program 1
                     </span>
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight mb-6 text-center">
                         1:1 Body Transformation Coaching
                     </h2>
-                    <p className="text-xl text-gray-700 font-medium leading-relaxed max-w-3xl">
+                    <p className="text-xl text-gray-700 font-medium leading-relaxed ">
                         Men and women who want to lose fat, build lean muscle, improve strength, and regain confidence — without confusion or extreme methods.
                     </p>
                 </div>

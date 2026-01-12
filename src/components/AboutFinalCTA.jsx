@@ -6,7 +6,7 @@ import { FaArrowRight } from "react-icons/fa";
 const AboutFinalCTA = () => {
     return (
         <section className="bg-[#1a1a19] text-[#f4f2f2] py-24 px-6 md:px-20 text-center">
-            <div className="max-w-4xl mx-auto">
+            <div className=" mx-auto">
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-8 leading-tight">
                     If This Approach Resonates With You, Let’s Talk.
                 </h2>

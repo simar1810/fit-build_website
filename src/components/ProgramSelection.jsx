@@ -6,7 +6,7 @@ import { FaArrowRight, FaQuestionCircle } from "react-icons/fa";
 const ProgramSelection = () => {
     return (
         <section className="bg-[#1a1a19] text-[#f4f2f2] py-24 px-6 md:px-20 text-center">
-            <div className="max-w-4xl mx-auto">
+            <div className=" mx-auto">
                 <div className="flex justify-center mb-6">
                     <FaQuestionCircle className="text-[#C82909] text-5xl" />
                 </div>

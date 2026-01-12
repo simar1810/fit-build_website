@@ -1,32 +1,25 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import FloatingSection from './FloatingSection'
+import BookingModal from './BookingModal'
 
 const Hero = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
-    <main className="flex flex-col min-h-[50vh] lg:min-h-screen text-[#3D3838] bg-[#D2CAB6] overflow-x-hidden relative pt-28 lg:pt-38">
+    <main className="flex flex-col min-h-[50vh] lg:h-screen lg:max-h-screen text-[#3D3838] bg-[#D2CAB6] overflow-hidden relative pt-28 lg:pt-38">
       {/* <div>
           <Image src="/page_effect_bg.png" alt='paper_effect' width={500} height={500} className=' w-full h-full inset-0 z-10 fixed opacity-20'/>
         </div> */}
       <div
-        className="flex flex-col justify-between grow bg-cover bg-center lg:pt-14 "
+        className="flex flex-col justify-between grow bg-cover bg-center  "
       // style={{ backgroundImage: "url('/bg-frame.png')" }}
       >
-        <section className="relative max-w-275 flex flex-col grow px-5 sm:px-10 lg:px-20 xl:px-8 lg:flex-row items-center justify-start lg:justify-between mx-auto xl:w-full w-full py-12 lg:py-0">
-          <div className="relative lg:absolute lg:-top-12 max-w-2xl mx-auto z-10 lg:pb-18 text-center lg:text-left xl:pb-28 2xl:pb-20 px-3 sm:px-0 mb-10 lg:mb-0">
-            {/* <div className="relative flex justify-center lg:justify-start items-center mb-6 lg:mb-10 2xl:mb-12 mt-4 lg:mt-6">
-              <Image
-                src="/logo-app.png"
-                alt="fit&build Logo"
-                width={250}
-                height={250}
-                className="w-48 sm:w-64 md:w-[30vw] lg:w-40 lg:absolute lg:-left-5 lg:-top-12.5 xl:-left-7.5 xl:-top-17.5 xl:w-48 2xl:w-[12vw] 2xl:-top-20"
-              />
-            </div> */}
+        <section className="relative  flex flex-col grow px-5 sm:px-10 lg:px-10 xl:px-8 lg:flex-row items-center justify-start lg:justify-between mx-auto xl:w-full w-full max-w-7xl py-12 lg:py-0">
+          <div className="relative lg:absolute max-w-4xl  mx-auto lg:mx-0 z-10 lg:pb-18 text-center lg:text-left xl:pb-28 2xl:pb-20 pr-20 sm:px-0 mb-10 lg:mb-0">
 
-
-
-            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-extrabold leading-tight text-[#2B2929]">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-4xl xl:text-5xl font-extrabold leading-tight text-[#2B2929]">
               Transform Your Body, Health & Confidence — <br />
               <span className="text-[#3D3838]">
                 Guided by a Competitive Bodybuilding Coach
@@ -39,7 +32,10 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mt-8 sm:mt-10">
-              <button className="px-8 sm:px-10 py-3 sm:py-4 bg-[#2B2929] text-[#f4f2f2] text-sm sm:text-base md:text-lg font-extrabold shadow hover:bg-[#1a1a19] transition flex items-center justify-center gap-3 rounded-md">
+              <button
+                onClick={() => setIsModalOpen(true)}
+                className="px-8 sm:px-10 py-3 sm:py-4 bg-[#2B2929] text-[#f4f2f2] text-sm sm:text-base md:text-lg font-extrabold shadow hover:bg-[#1a1a19] transition flex items-center justify-center gap-3 rounded-md"
+              >
                 Book a Free Strategy Call
               </button>
               <button className="px-8 sm:px-10 py-3 sm:py-4 border-2 border-[#2B2929] text-[#2B2929] text-sm sm:text-base md:text-lg font-bold hover:bg-[#2B2929] hover:text-[#f4f2f2] transition rounded-md">
@@ -48,13 +44,13 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="flex justify-center items-end absolute lg:right-16 xl:right-0 lg:-bottom-17.5 xl:-bottom-22 2xl:-bottom-20">
+          <div className="flex justify-center items-end absolute lg:right-6 xl:right-0 lg:-bottom-17.5 xl:-bottom-22 2xl:-bottom-20">
             <Image
               src="/boy-rope.png"
               alt="Wellness Yoga"
               width={500}
               height={500}
-              className="hidden lg:flex lg:w-sm xl:w-100 2xl:w-[30vw]"
+              className="hidden lg:flex lg:w-sm xl:w-100 "
             />
           </div>
         </section>
@@ -78,6 +74,7 @@ const Hero = () => {
           </div>
         </div>
       </section> */}
+      <BookingModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </main >
   )
 }

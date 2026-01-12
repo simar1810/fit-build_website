@@ -4,7 +4,7 @@ import React from "react";
 const ProgramsHero = () => {
     return (
         <section className="bg-[#1a1a19] text-[#f4f2f2] pt-32 pb-20 px-6 md:px-20 text-center">
-            <div className="max-w-4xl mx-auto">
+            <div className=" mx-auto">
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
                     Coaching Programs
                 </h1>
