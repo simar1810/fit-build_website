@@ -4,10 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FaBars, FaTimes } from "react-icons/fa";
+import BookingModal from "./BookingModal";
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
     const pathname = usePathname();
 
     useEffect(() => {
@@ -33,7 +35,7 @@ const Navbar = () => {
             className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-[#1a1a19] shadow-lg py-1" : "bg-transparent py-2"
                 }`}
         >
-            <div className=" mx-auto px-6 md:px-10 flex justify-around items-center">
+            <div className=" mx-auto px-6 md:px-10 flex justify-between lg:justify-around items-center">
                 <Link href="/">
 
                     <div className={`relative transition-all duration-300 w-24`}>
@@ -62,12 +64,12 @@ const Navbar = () => {
                 </nav>
 
                 <div className="hidden md:block">
-                    <Link
-                        href="/book"
+                    <button
+                        onClick={() => setIsModalOpen(true)}
                         className="px-6 py-2.5 font-bold text-sm tracking-wide rounded-md transition-all shadow-lg bg-[#C82909] text-white hover:bg-[#a02006]"
                     >
                         Book a Call
-                    </Link>
+                    </button>
                 </div>
 
                 <button
@@ -98,15 +100,18 @@ const Navbar = () => {
                         </Link>
                     ))}
 
-                    <Link
-                        href="/book"
-                        onClick={() => setIsOpen(false)}
+                    <button
+                        onClick={() => {
+                            setIsOpen(false);
+                            setIsModalOpen(true);
+                        }}
                         className="px-8 py-3 bg-[#C82909] text-white text-lg font-bold rounded-md"
                     >
                         Book a Call
-                    </Link>
+                    </button>
                 </div>
             )}
+            <BookingModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </header>
     );
 };

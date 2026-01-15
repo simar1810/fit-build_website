@@ -17,7 +17,7 @@ const Hero = () => {
       // style={{ backgroundImage: "url('/bg-frame.png')" }}
       >
         <section className="relative  flex flex-col grow px-5 sm:px-10 lg:px-10 xl:px-8 lg:flex-row items-center justify-start lg:justify-between mx-auto xl:w-full w-full max-w-7xl py-12 lg:py-0">
-          <div className="relative lg:absolute max-w-4xl  mx-auto lg:mx-0 z-10 lg:pb-18 text-center lg:text-left xl:pb-28 2xl:pb-20 pr-20 sm:px-0 mb-10 lg:mb-0">
+          <div className="relative lg:absolute max-w-4xl  mx-auto lg:mx-0 z-10 lg:pb-18 text-center lg:text-left xl:pb-28 2xl:pb-20 sm:px-0 mb-10 lg:mb-0">
 
             <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-4xl xl:text-5xl font-extrabold leading-tight text-[#2B2929]">
               Transform Your Body, Health & Confidence — <br />
