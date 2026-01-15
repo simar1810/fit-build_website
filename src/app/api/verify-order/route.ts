@@ -17,12 +17,14 @@ export async function POST(req: NextRequest) {
         if (isAuthentic) {
             // Payment verified
             // Here you can save the payment details to your database
+            // console.log(`Payment confirmed: Order ${razorpay_order_id}, Payment ${razorpay_payment_id}`);
 
             return NextResponse.json({
                 success: true,
                 message: "Payment verified successfully"
             });
         } else {
+            // console.error(`Invalid Signature: Order ${razorpay_order_id}, Payment ${razorpay_payment_id}`);
             return NextResponse.json({
                 success: false,
                 message: "Invalid signature"
