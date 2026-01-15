@@ -5,7 +5,7 @@ import { FaCheck, FaTimes } from "react-icons/fa";
 const BookingCriteria = () => {
     return (
         <section className="bg-[#1a1a19] text-[#f4f2f2] py-24 px-6 md:px-20">
-            <div className="max-w-6xl mx-auto">
+            <div className=" mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
                     
                     <div>

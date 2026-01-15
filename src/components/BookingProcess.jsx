@@ -4,7 +4,7 @@ import React from "react";
 const BookingProcess = () => {
     return (
         <section className="bg-white text-[#2B2929] py-20 px-6 md:px-20">
-            <div className="max-w-4xl mx-auto">
+            <div className=" mx-auto">
                 <h2 className="text-3xl sm:text-4xl font-extrabold mb-12 text-center leading-tight">
                     What Happens Next
                 </h2>

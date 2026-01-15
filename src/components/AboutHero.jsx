@@ -5,7 +5,7 @@ import Image from "next/image";
 const AboutHero = () => {
     return (
         <section className="bg-[#1a1a19] text-[#f4f2f2] pt-32 pb-20 px-6 md:px-20">
-            <div className="max-w-4xl mx-auto text-center">
+            <div className=" mx-auto text-center">
 
                 <div className="relative w-64 h-64 md:w-80 md:h-80 mx-auto mb-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10">
                     <Image

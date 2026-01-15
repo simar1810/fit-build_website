@@ -5,7 +5,7 @@ import { FaLayerGroup, FaBolt, FaRunning } from "react-icons/fa";
 const AboutPhilosophy = () => {
     return (
         <section className="bg-[#1a1a19] text-[#f4f2f2] py-24 px-6 md:px-20">
-            <div className="max-w-6xl mx-auto">
+            <div className=" mx-auto">
                 <div className="flex flex-col lg:flex-row items-start gap-16">
                    
                     <div className="lg:w-1/2">

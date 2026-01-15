@@ -49,7 +49,7 @@ const Transformations = () => {
 
   return (
     <section className="pt-6 md:pt-10 pb-24 px-4 sm:px-10 md:px-20 bg-white">
-      <div className="max-w-7xl mx-auto relative">
+      <div className=" mx-auto relative">
         <p className="text-[#2B2929] font-extrabold text-2xl sm:text-3xl md:text-4xl text-center mb-3">
           Real People. Real Discipline. Real Results.
         </p>

@@ -33,7 +33,7 @@ const Navbar = () => {
             className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-[#1a1a19] shadow-lg py-1" : "bg-transparent py-2"
                 }`}
         >
-            <div className="max-w-7xl mx-auto px-6 md:px-10 flex justify-between items-center">
+            <div className=" mx-auto px-6 md:px-10 flex justify-around items-center">
                 <Link href="/">
 
                     <div className={`relative transition-all duration-300 w-24`}>
