@@ -3,20 +3,15 @@ import React from "react";
 import { useState, useEffect } from "react";
 
 
+
 import { useSearchParams } from "next/navigation";
+import { InlineWidget } from "react-calendly";
 import BookingModal from "./BookingModal";
 
 const BookingCalendly = () => {
     const searchParams = useSearchParams();
-    const [isPaid, setIsPaid] = useState(false);
+    const isPaid = searchParams.get("paid") === "true";
     const [isModalOpen, setIsModalOpen] = useState(false);
-
-    useEffect(() => {
-        const paid = searchParams.get("paid");
-        if (paid === "true") {
-            setIsPaid(true);
-        }
-    }, [searchParams]);
 
     return (
         <section className="bg-[#1a1a19] text-[#f4f2f2] py-24 px-6 md:px-20 text-center">
@@ -33,15 +28,10 @@ const BookingCalendly = () => {
 
                 <div className="w-full min-h-[700px] mb-16 relative">
                     <div className={!isPaid ? "blur-md pointer-events-none select-none" : ""}>
-                        <iframe
-                            src="https://calendar.google.com/calendar/embed?src=en.indian%23holiday%40group.v.calendar.google.com&ctz=Asia%2FKolkata"
-                            style={{ border: 0 }}
-                            width="100%"
-                            height="700"
-                            frameBorder="0"
-                            scrolling="no"
-                            className="rounded-lg shadow-sm bg-white"
-                        ></iframe>
+                        <InlineWidget
+                            url={`https://calendly.com/${process.env.NEXT_PUBLIC_CALENDLY_LINK}/30min`}
+                            styles={{ height: "700px", width: "100%" }}
+                        />
                     </div>
 
                     {!isPaid && (
