@@ -1,9 +1,11 @@
 "use client";
-import React from "react";
-import Link from "next/link";
+import React, { useState } from "react";
 import { FaArrowRight, FaQuestionCircle } from "react-icons/fa";
+import BookingModal from "./BookingModal";
 
 const ProgramSelection = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
     return (
         <section className="bg-[#1a1a19] text-[#f4f2f2] py-24 px-6 md:px-20 text-center">
             <div className=" mx-auto">
@@ -49,12 +51,16 @@ const ProgramSelection = () => {
                     </p>
                 </div>
 
-                <Link href="/book" className="inline-block w-full sm:w-auto">
-                    <button className="w-full sm:w-auto px-10 py-5 bg-[#C82909] text-white text-lg font-bold rounded-lg shadow-lg hover:bg-[#a62207] hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3 uppercase tracking-wide">
+                <div className="inline-block w-full sm:w-auto">
+                    <button
+                        onClick={() => setIsModalOpen(true)}
+                        className="w-full sm:w-auto px-10 py-5 bg-[#C82909] text-white text-lg font-bold rounded-lg shadow-lg hover:bg-[#a62207] hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3 uppercase tracking-wide"
+                    >
                         Book a Free Strategy Call <FaArrowRight />
                     </button>
-                </Link>
+                </div>
             </div>
+            <BookingModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </section>
     );
 };

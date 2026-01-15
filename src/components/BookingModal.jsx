@@ -61,8 +61,6 @@ const BookingModal = ({ isOpen, onClose }) => {
 
     const createOrder = async () => {
         try {
-            // Note: The user requested to use /razorpay/create-order in the reference, 
-            // but the existing file is /api/create-order. We will use the existing route path.
             const res = await fetch(
                 '/api/create-order',
                 {
@@ -108,17 +106,17 @@ const BookingModal = ({ isOpen, onClose }) => {
             const data = await verifyRes.json();
 
             if (data.success) {
-                // Payment verified successfully
+                
                 setFormData({ name: "", email: "", phone: "" });
                 onClose();
                 router.push("/book?paid=true");
             } else {
-                alert("❌ Payment verification failed: " + data.message);
+                alert("Payment verification failed: " + data.message);
             }
 
         } catch (error) {
             console.error("Payment verification error:", error);
-            alert("❌ Payment verification failed. Please contact support.");
+            alert(" Payment verification failed. Please contact support.");
         }
     };
 
@@ -132,7 +130,6 @@ const BookingModal = ({ isOpen, onClose }) => {
         if (!validateForm()) {
             return;
         }
-        // Using the env var we set previously or the one from the reference
         const keyId = process.env.NEXT_PUBLIC_RAZORPAY_ID || process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID;
         if (!keyId) {
             alert("Payment configuration error. Please contact support.");

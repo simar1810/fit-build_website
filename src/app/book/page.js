@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Footer from "@/components/Footer";
 import BookingHero from "@/components/BookingHero";
 import BookingRules from "@/components/BookingRules";
@@ -12,7 +13,9 @@ export default function Booking() {
             <BookingRules />
             <BookingCriteria />
             <BookingProcess />
-            <BookingCalendly />
+            <Suspense fallback={<div>Loading...</div>}>
+                <BookingCalendly />
+            </Suspense>
             {/* <Footer /> */}
         </>
     );
