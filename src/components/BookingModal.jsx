@@ -106,10 +106,10 @@ const BookingModal = ({ isOpen, onClose }) => {
             const data = await verifyRes.json();
 
             if (data.success) {
-                
+
                 setFormData({ name: "", email: "", phone: "" });
                 onClose();
-                router.push("/book?paid=true");
+                router.push("/book?paid=true#calendar-section");
             } else {
                 alert("Payment verification failed: " + data.message);
             }
