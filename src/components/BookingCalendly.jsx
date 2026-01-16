@@ -14,22 +14,22 @@ const BookingCalendly = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
-        <section className="bg-[#1a1a19] text-[#f4f2f2] py-24 px-6 md:px-20 text-center">
+        <section  className="bg-[#1a1a19] text-[#f4f2f2] py-24 px-6 md:px-20 text-center">
             <div className=" mx-auto">
-                <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 leading-tight">
+                <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 leading-tight"id="calendar-section">
                     Book Your Strategy Call Below
                 </h2>
 
-                <p className="text-gray-400 text-sm md:text-base font-medium mb-10 max-w-2xl mx-auto">
+                <p className="text-gray-400 text-sm md:text-base font-medium mb-1 max-w-2xl mx-auto">
                     Please ensure you are in a quiet environment and can focus during the call.
                     <br />
                     Reschedules without notice may result in cancellation.
                 </p>
 
-                <div className="w-full min-h-[700px] mb-16 relative">
+                <div className="w-full min-h-[700px] mb-1 relative ">
                     <div className={!isPaid ? "blur-md pointer-events-none select-none" : ""}>
                         <InlineWidget
-                            url={`https://calendly.com/${process.env.NEXT_PUBLIC_CALENDLY_LINK}/30min`}
+                            url={`https://calendly.com/raghavarora419/30min?primary_color=ff0000`}
                             styles={{ height: "700px", width: "100%" }}
                         />
                     </div>
