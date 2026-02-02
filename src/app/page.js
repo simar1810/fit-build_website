@@ -17,7 +17,7 @@ export default function Home() {
       <Qualification />
       <ProgramsOverview />
       <Process />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <FinalCTA />
       {/* <Footer /> */}
     </>
