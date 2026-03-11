@@ -38,8 +38,11 @@ const Hero = () => {
               >
                 Book a Free Strategy Call
               </button>
-              <button className="px-8 sm:px-10 py-3 sm:py-4 border-2 border-[#2B2929] text-[#2B2929] text-sm sm:text-base md:text-lg font-bold hover:bg-[#2B2929] hover:text-[#f4f2f2] transition rounded-md">
-                See Real Transformations
+              <button
+                onClick={() => document.getElementById("testimonials")?.scrollIntoView({ behavior: "smooth" })}
+                className="px-8 sm:px-10 py-3 sm:py-4 border-2 border-[#2B2929] text-[#2B2929] text-sm sm:text-base md:text-lg font-bold hover:bg-[#2B2929] hover:text-[#f4f2f2] transition rounded-md"
+              >
+                Read Client Stories
               </button>
             </div>
           </div>

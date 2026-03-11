@@ -5,6 +5,7 @@ import AboutWhyCoach from "@/components/AboutWhyCoach";
 import AboutPhilosophy from "@/components/AboutPhilosophy";
 import AboutWhoWorkWith from "@/components/AboutWhoWorkWith";
 import AboutDifferentiation from "@/components/AboutDifferentiation";
+import AboutCertifications from "@/components/AboutCertifications";
 import AboutExpectations from "@/components/AboutExpectations";
 import AboutFinalCTA from "@/components/AboutFinalCTA";
 
@@ -17,6 +18,7 @@ export default function About() {
             <AboutPhilosophy />
             <AboutWhoWorkWith />
             <AboutDifferentiation />
+            <AboutCertifications />
             <AboutExpectations />
             <AboutFinalCTA />
             {/* <Footer /> */}

@@ -1,6 +1,5 @@
 import Hero from "@/components/Hero";
 import AuthoritySnapshot from "@/components/AuthoritySnapshot";
-import Transformations from "@/components/Transformations";
 import Qualification from "@/components/Qualification";
 import ProgramsOverview from "@/components/ProgramsOverview";
 import Process from "@/components/Process";
@@ -13,7 +12,6 @@ export default function Home() {
     <>
       <Hero />
       <AuthoritySnapshot />
-      <Transformations />
       <Qualification />
       <ProgramsOverview />
       <Process />
