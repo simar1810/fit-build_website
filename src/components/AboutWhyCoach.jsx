@@ -18,10 +18,10 @@ const AboutWhyCoach = () => {
     ];
 
     return (
-        <section className="bg-white text-[#2B2929] py-20 px-6 md:px-20">
+        <section className="bg-[#0d0d0d] text-white py-20 px-6 md:px-20">
             <div className=" mx-auto">
                 <h2 className="text-3xl sm:text-4xl font-extrabold mb-12 leading-tight text-center">
-                    I coach because most people fail not due to lack of effort, but due to lack of structure and clarity.
+                    <span className="text-[#8b1a1a]">I coach</span> because most people fail not due to lack of effort, but due to lack of structure and clarity.
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20">
@@ -56,7 +56,7 @@ const AboutWhyCoach = () => {
                 </div>
 
                 <div className="text-center mt-16">
-                    <p className="text-xl md:text-2xl font-extrabold text-[#C82909] uppercase tracking-wide">
+                    <p className="text-xl md:text-2xl font-extrabold text-[#8b1a1a] uppercase tracking-wide">
                         No gimmicks. No hype. No shortcuts.
                     </p>
                 </div>

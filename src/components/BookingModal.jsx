@@ -221,7 +221,7 @@ const BookingModal = ({ isOpen, onClose }) => {
                 </button>
 
                 <h2 className="text-2xl font-bold text-center text-[#f4f2f2] mb-2">
-                    Book Your Consultation
+                    Book Your <span className='text-[#8b1a1a]'>Consultation</span>
                 </h2>
                 <p className="text-center text-gray-400 mb-8 text-sm">
                     Fill in your details below to proceed
@@ -263,7 +263,7 @@ const BookingModal = ({ isOpen, onClose }) => {
                     <button
                         type="submit"
                         disabled={loading}
-                        className="w-full bg-[#C82909] text-white font-bold py-3 rounded-lg shadow-lg hover:bg-[#a02006] transform hover:-translate-y-0.5 transition duration-200 mt-6 disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="w-full bg-[#8b1a1a] text-white font-bold py-3 rounded-lg shadow-lg hover:bg-[#a02006] transform hover:-translate-y-0.5 transition duration-200 mt-6 disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                         {loading ? 'Processing...' : 'Pay ₹199 & Book'}
                     </button>

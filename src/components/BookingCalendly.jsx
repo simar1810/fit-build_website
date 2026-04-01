@@ -38,7 +38,7 @@ const BookingCalendly = () => {
                         <div className="absolute inset-0 flex items-start justify-center pt-32 z-10">
                             <button
                                 onClick={() => setIsModalOpen(true)}
-                                className="px-10 py-4 bg-[#C82909] text-white text-lg font-bold rounded-md shadow-lg hover:bg-[#a02006] transition-all transform hover:-translate-y-1"
+                                className="px-10 py-4 bg-[#8b1a1a] text-white text-lg font-bold rounded-md shadow-lg hover:bg-[#a02006] transition-all transform hover:-translate-y-1"
                             >
                                 Book a Free Strategy Call
                             </button>

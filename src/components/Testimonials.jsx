@@ -56,7 +56,7 @@ const TestimonialCard = ({ testimonial }) => {
     return (
         <div className="bg-[#2B2929] rounded-lg shadow-lg overflow-hidden">
             <div className="p-8">
-                <FaQuoteLeft className="text-[#C82909] text-2xl mb-5" />
+                <FaQuoteLeft className="text-[#8b1a1a] text-2xl mb-5" />
 
                 <p className="text-lg font-medium italic text-gray-300 leading-relaxed mb-4">
                     &ldquo;{testimonial.excerpt}&rdquo;
@@ -77,7 +77,7 @@ const TestimonialCard = ({ testimonial }) => {
 
                 <button
                     onClick={() => setExpanded(!expanded)}
-                    className="flex items-center gap-2 text-[#C82909] text-sm font-bold mt-4 hover:text-[#e03a1a] transition-colors cursor-pointer"
+                    className="flex items-center gap-2 text-[#8b1a1a] text-sm font-bold mt-4 hover:text-[#e03a1a] transition-colors cursor-pointer"
                 >
                     {expanded ? (
                         <>

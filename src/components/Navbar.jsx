@@ -38,13 +38,13 @@ const Navbar = () => {
             <div className=" mx-auto px-6 md:px-10 flex justify-between lg:justify-around items-center">
                 <Link href="/">
 
-                    <div className={`relative transition-all duration-300 w-24`}>
+                    <div className={`relative transition-all duration-300 w-20 h-20 border-2 m-1 rounded-full bg-white`}>
                         <Image
                             src="/logo-app.png"
                             alt="Fit & Build"
-                            width={160}
-                            height={50}
-                            className="w-full h-auto object-contain"
+                            width={180}
+                            height={70}
+                            className="w-full h-auto object-contain border-2"
                         />
                     </div>
                 </Link>
@@ -66,11 +66,12 @@ const Navbar = () => {
                 <div className="hidden md:block">
                     <button
                         onClick={() => setIsModalOpen(true)}
-                        className="px-6 py-2.5 font-bold text-sm tracking-wide rounded-md transition-all shadow-lg bg-[#C82909] text-white hover:bg-[#a02006]"
+                        className="px-6 py-2.5 font-bold text-sm tracking-wide rounded-md transition-all shadow-lg bg-[#8b1a1a] text-white hover:bg-[#a02006]"
                     >
                         Book a Call
                     </button>
                 </div>
+                
 
                 <button
                     className="md:hidden text-2xl"
@@ -105,7 +106,7 @@ const Navbar = () => {
                             setIsOpen(false);
                             setIsModalOpen(true);
                         }}
-                        className="px-8 py-3 bg-[#C82909] text-white text-lg font-bold rounded-md"
+                        className="px-8 py-3 bg-[#8b1a1a] text-white text-lg font-bold rounded-md"
                     >
                         Book a Call
                     </button>
@@ -117,3 +118,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+// #8b1a1a

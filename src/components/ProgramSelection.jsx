@@ -10,7 +10,7 @@ const ProgramSelection = () => {
         <section className="bg-[#1a1a19] text-[#f4f2f2] py-24 px-6 md:px-20 text-center">
             <div className=" mx-auto">
                 <div className="flex justify-center mb-6">
-                    <FaQuestionCircle className="text-[#C82909] text-5xl" />
+                    <FaQuestionCircle className="text-[#8b1a1a] text-5xl" />
                 </div>
 
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-8 leading-tight">
@@ -27,19 +27,19 @@ const ProgramSelection = () => {
                     </h3>
                     <ul className="space-y-4 text-lg text-gray-300">
                         <li className="flex items-center gap-3">
-                            <span className="w-2 h-2 bg-[#C82909] rounded-full"></span>
+                            <span className="w-2 h-2 bg-[#8b1a1a] rounded-full"></span>
                             Your current condition
                         </li>
                         <li className="flex items-center gap-3">
-                            <span className="w-2 h-2 bg-[#C82909] rounded-full"></span>
+                            <span className="w-2 h-2 bg-[#8b1a1a] rounded-full"></span>
                             Your goals
                         </li>
                         <li className="flex items-center gap-3">
-                            <span className="w-2 h-2 bg-[#C82909] rounded-full"></span>
+                            <span className="w-2 h-2 bg-[#8b1a1a] rounded-full"></span>
                             Your lifestyle and constraints
                         </li>
                         <li className="flex items-center gap-3">
-                            <span className="w-2 h-2 bg-[#C82909] rounded-full"></span>
+                            <span className="w-2 h-2 bg-[#8b1a1a] rounded-full"></span>
                             Your level of commitment
                         </li>
                     </ul>
@@ -54,7 +54,7 @@ const ProgramSelection = () => {
                 <div className="inline-block w-full sm:w-auto">
                     <button
                         onClick={() => setIsModalOpen(true)}
-                        className="w-full sm:w-auto px-10 py-5 bg-[#C82909] text-white text-lg font-bold rounded-lg shadow-lg hover:bg-[#a62207] hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3 uppercase tracking-wide"
+                        className="w-full sm:w-auto px-10 py-5 bg-[#8b1a1a] text-white text-lg font-bold rounded-lg shadow-lg hover:bg-[#a62207] hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3 uppercase tracking-wide"
                     >
                         Book a Free Strategy Call <FaArrowRight />
                     </button>

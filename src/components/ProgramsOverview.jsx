@@ -26,9 +26,9 @@ const ProgramsOverview = () => {
     ];
 
     return (
-        <section className="bg-[#E4DFD3] py-20 px-6 md:px-20 text-[#2B2929]">
+        <section className="bg-[#0d0d0d] py-20 px-6 md:px-20 text-[#8b1a1a]">
             <div className=" mx-auto">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-12 text-center leading-tight">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-12 text-center leading-tight text-white">
                     Coaching Programs
                 </h2>
 
@@ -36,20 +36,20 @@ const ProgramsOverview = () => {
                     {programs.map((program, index) => (
                         <div
                             key={index}
-                            className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between border border-transparent hover:border-[#2B2929]/10 group"
+                            className="bg-[#141414] p-8 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between border border-transparent hover:border-[#2B2929]/10 group"
                         >
                             <div>
                                 <h3 className="text-xl md:text-2xl font-bold mb-4 group-hover:text-[#C82909] transition-colors">
                                     {program.title}
                                 </h3>
-                                <p className="text-gray-700 font-medium leading-relaxed mb-8">
+                                <p className="text-white font-medium leading-relaxed mb-8">
                                     {program.description}
                                 </p>
                             </div>
 
                             <Link
                                 href={program.link}
-                                className="inline-flex items-center gap-2 font-bold text-[#2B2929] hover:text-[#C82909] transition-colors uppercase tracking-wide text-sm"
+                                className="inline-flex items-center gap-2 font-bold text-[#8b1a1a] hover:text-[#C82909] transition-colors uppercase tracking-wide text-sm"
                             >
                                 View Program <FaArrowRight />
                             </Link>

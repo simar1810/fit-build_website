@@ -8,7 +8,7 @@ const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <main className="flex flex-col min-h-[50vh] lg:h-screen lg:max-h-screen text-[#3D3838] bg-[#D2CAB6] overflow-hidden relative pt-28 lg:pt-38">
+    <main className="flex flex-col min-h-[50vh] lg:h-screen lg:max-h-screen bg-[#141414] overflow-hidden relative pt-28 lg:pt-38">
       {/* <div>
           <Image src="/page_effect_bg.png" alt='paper_effect' width={500} height={500} className=' w-full h-full inset-0 z-10 fixed opacity-20'/>
         </div> */}
@@ -19,14 +19,14 @@ const Hero = () => {
         <section className="relative  flex flex-col grow px-5 sm:px-10 lg:px-10 xl:px-8 lg:flex-row items-center justify-start lg:justify-between mx-auto xl:w-full w-full max-w-7xl py-12 lg:py-0">
           <div className="relative lg:absolute max-w-4xl  mx-auto lg:mx-0 z-10 lg:pb-18 text-center lg:text-left xl:pb-28 2xl:pb-20 sm:px-0 mb-10 lg:mb-0">
 
-            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-4xl xl:text-5xl font-extrabold leading-tight text-[#2B2929]">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-4xl xl:text-5xl font-extrabold leading-tight text-white">
               Transform Your Body, Health & Confidence — <br />
-              <span className="text-[#3D3838]">
+              <span className="text-[#8b1a1a]">
                 Guided by a Competitive Bodybuilding Coach
               </span>
             </h1>
 
-            <p className="mt-4 sm:mt-6 md:mt-8 w-full sm:w-[90%] md:w-[90%] mx-auto lg:w-[90%] lg:mx-0 text-base md:text-xl lg:text-lg font-bold text-gray-800 leading-relaxed">
+            <p className="mt-4 sm:mt-6 md:mt-8 w-full sm:w-[90%] md:w-[90%] mx-auto lg:w-[90%] lg:mx-0 text-base md:text-xl lg:text-lg font-bold text-white leading-relaxed">
               Fat loss. Lean muscle. Strength.<br />
               No guesswork. No shortcuts. Just proven systems built on real experience.
             </p>
@@ -34,13 +34,13 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mt-8 sm:mt-10">
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="px-8 sm:px-10 py-3 sm:py-4 bg-[#2B2929] text-[#f4f2f2] text-sm sm:text-base md:text-lg font-extrabold shadow hover:bg-[#1a1a19] transition flex items-center justify-center gap-3 rounded-md"
+                className="px-8 sm:px-10 py-3 sm:py-4 bg-[#8b1a1a] text-[#f4f2f2] text-sm sm:text-base md:text-lg font-extrabold shadow hover:bg-[#1a1a19] transition flex items-center justify-center gap-3 rounded-md"
               >
                 Book a Free Strategy Call
               </button>
               <button
                 onClick={() => document.getElementById("testimonials")?.scrollIntoView({ behavior: "smooth" })}
-                className="px-8 sm:px-10 py-3 sm:py-4 border-2 border-[#2B2929] text-[#2B2929] text-sm sm:text-base md:text-lg font-bold hover:bg-[#2B2929] hover:text-[#f4f2f2] transition rounded-md"
+                className="px-8 sm:px-10 py-3 sm:py-4 border-2 border-[#8b1a1a] text-[#8b1a1a] text-sm sm:text-base md:text-lg font-bold hover:bg-[#2B2929] hover:text-[#f4f2f2] transition rounded-md"
               >
                 Read Client Stories
               </button>
