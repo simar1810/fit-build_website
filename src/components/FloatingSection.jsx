@@ -4,7 +4,7 @@ const FloatingSection = () => {
   const words = ["Transformation", "Strength", "Discipline", "Physique", "Longevity", "Vitality", "Endurance", "Wellness", "Balance", "Energy"];
   
   return (
-    <div className="bg-[#C82909] z-20 h-20 md:h-25 flex items-center w-full text-white font-extrabold overflow-hidden py-6">
+    <div className="bg-[#8b1a1a] z-20 h-20 md:h-25 flex items-center w-full text-white font-extrabold overflow-hidden py-6">
       <style>
         {`
           @keyframes scroll {

@@ -28,7 +28,7 @@ const BookingCriteria = () => {
                     </div>
 
                     <div>
-                        <h2 className="text-3xl font-extrabold mb-8 text-[#C82909] uppercase tracking-wide">
+                        <h2 className="text-3xl font-extrabold mb-8 text-[#8b1a1a] uppercase tracking-wide">
                             Please Do NOT Book If:
                         </h2>
                         <ul className="space-y-6">
@@ -39,7 +39,7 @@ const BookingCriteria = () => {
                                 "You’re unwilling to be honest about your habits"
                             ].map((item, i) => (
                                 <li key={i} className="flex items-start gap-4 text-xl text-gray-400">
-                                    <FaTimes className="text-[#C82909] mt-1 shrink-0" />
+                                    <FaTimes className="text-[#8b1a1a] mt-1 shrink-0" />
                                     <span className="leading-relaxed">{item}</span>
                                 </li>
                             ))}

@@ -5,16 +5,16 @@ import { FaCheck } from "react-icons/fa";
 
 const Program2 = () => {
     return (
-        <section className="bg-white text-[#2B2929] py-20 px-6 md:px-20 border-b border-gray-200">
+        <section className="bg-[#0d0d0d] text-[#2B2929] py-20 px-6 md:px-20 border-b border-gray-200">
             <div className=" mx-auto">
                 <div className="mb-12">
                     <span className="text-[#C82909] font-bold tracking-wider uppercase text-sm md:text-base mb-2 block">
                         Program 2
                     </span>
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight mb-6 text-center">
-                        Health-First Fat Loss & Strength Coaching
+                    <h2 className="text-3xl text-white sm:text-4xl md:text-5xl font-extrabold leading-tight mb-6 text-center">
+                        <span className="text-[#8b1a1a]">Health-First</span> Fat Loss & Strength Coaching
                     </h2>
-                    <p className="text-xl text-gray-700 font-medium leading-relaxed">
+                    <p className="text-xl text-gray-400 font-medium leading-relaxed">
                         Busy professionals dealing with excess weight, low energy, or lifestyle-related health concerns such as blood pressure, cholesterol, or insulin resistance.
                     </p>
                 </div>
@@ -22,7 +22,7 @@ const Program2 = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 mb-16">
                     {/* LEFT COLUMN */}
                     <div>
-                        <h3 className="text-xl font-bold mb-6 border-b border-gray-200 pb-2">
+                        <h3 className="text-xl text-white font-bold mb-6 border-b border-gray-200 pb-2">
                             This is designed for people who:
                         </h3>
                         <ul className="space-y-4 mb-10">
@@ -32,25 +32,25 @@ const Program2 = () => {
                                 "Value long-term health as much as physical appearance",
                                 "Want guidance that respects medical context"
                             ].map((item, i) => (
-                                <li key={i} className="flex items-start gap-3 text-gray-700">
-                                    <FaCheck className="text-[#C82909] mt-1 shrink-0" />
+                                <li key={i} className="flex items-start gap-3 text-gray-400">
+                                    <FaCheck className="text-[#8b1a1a] mt-1 shrink-0" />
                                     <span>{item}</span>
                                 </li>
                             ))}
                         </ul>
 
                         <div className="mb-10">
-                            <h3 className="text-xl font-bold mb-4">
+                            <h3 className="text-xl text-white font-bold mb-4">
                                 What Makes This Program Different:
                             </h3>
-                            <p className="text-lg text-gray-700 leading-relaxed bg-gray-50 p-4 rounded-lg border border-gray-100">
+                            <p className="text-lg text-gray-400 leading-relaxed bg-[#2B2929] p-4 rounded-lg border-2 border-[#8b1a1a]">
                                 Health is not ignored in pursuit of aesthetics.
                                 <br />
                                 Training and nutrition are structured with awareness of recovery, stress, and overall well-being.
                             </p>
                         </div>
 
-                        <h3 className="text-xl font-bold mb-6 border-b border-gray-200 pb-2">
+                        <h3 className="text-xl text-white font-bold mb-6 border-b border-gray-200 pb-2">
                             What This Coaching Includes:
                         </h3>
                         <ul className="space-y-4">
@@ -60,8 +60,8 @@ const Program2 = () => {
                                 "Weekly progress tracking and accountability",
                                 "Adjustments based on response and recovery"
                             ].map((item, i) => (
-                                <li key={i} className="flex items-start gap-3 text-gray-700">
-                                    <FaCheck className="text-[#2B2929] mt-1 shrink-0" />
+                                <li key={i} className="flex items-start gap-3 text-gray-400">
+                                    <FaCheck className="text-[#8b1a1a] mt-1 shrink-0" />
                                     <span>{item}</span>
                                 </li>
                             ))}
@@ -69,7 +69,7 @@ const Program2 = () => {
                     </div>
 
                     <div>
-                        <h3 className="text-xl font-bold mb-6 border-b border-gray-200 pb-2">
+                        <h3 className="text-xl text-white font-bold mb-6 border-b border-gray-200 pb-2">
                             Outcomes Clients Aim For:
                         </h3>
                         <ul className="space-y-4 mb-10">
@@ -80,7 +80,7 @@ const Program2 = () => {
                                 "Improved lifestyle habits",
                                 "Long-term adherence without burnout"
                             ].map((item, i) => (
-                                <li key={i} className="flex items-start gap-3 text-gray-700">
+                                <li key={i} className="flex items-start gap-3 text-gray-400">
                                     <FaCheck className="text-green-600 mt-1 shrink-0" />
                                     <span>{item}</span>
                                 </li>
@@ -88,7 +88,7 @@ const Program2 = () => {
                         </ul>
 
                         <div className="bg-[#E4DFD3] p-6 rounded-lg border-l-4 border-[#2B2929] mb-8">
-                            <p className="font-bold text-[#2B2929] mb-2 uppercase text-sm tracking-wide">
+                            <p className="font-bold text-[#8b1a1a] mb-2 uppercase text-sm tracking-wide">
                                 Important Note:
                             </p>
                             <p className="text-lg font-medium text-gray-800 leading-relaxed">
@@ -99,7 +99,7 @@ const Program2 = () => {
                         </div>
 
                         <Link href="/book" className="block w-full">
-                            <button className="w-full py-4 bg-[#C82909] text-white text-lg font-bold rounded hover:bg-[#a62207] transition-all shadow-md uppercase tracking-wide">
+                            <button className="w-full py-4 bg-[#8b1a1a] text-white text-lg font-bold rounded hover:bg-[#a62207] transition-all shadow-md uppercase tracking-wide">
                                 Apply for Health-First Coaching
                             </button>
                         </Link>

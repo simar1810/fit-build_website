@@ -11,7 +11,7 @@ const AboutWhoWorkWith = () => {
     ];
 
     return (
-        <section className="bg-white text-[#2B2929] py-20 px-6 md:px-20">
+        <section className="bg-[#141414] text-white py-20 px-6 md:px-20">
             <div className=" mx-auto text-center">
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-12 leading-tight">
                     Who I Work With
@@ -19,15 +19,15 @@ const AboutWhoWorkWith = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left mb-16 px-4">
                     {clients.map((client, idx) => (
-                        <div key={idx} className="flex items-start gap-4 p-4 rounded-lg hover:bg-gray-50 transition-colors">
-                            <FaCheckCircle className="text-[#2B2929] mt-1 shrink-0" size={24} />
-                            <span className="text-lg md:text-xl font-medium text-gray-800">{client}</span>
+                        <div key={idx} className="flex items-start gap-4 p-4 rounded-lg bg-[#2B2929] transition-colors">
+                            <FaCheckCircle className="text-[#8b1a1a] mt-1 shrink-0" size={24} />
+                            <span className="text-lg md:text-xl font-medium text-white">{client}</span>
                         </div>
                     ))}
                 </div>
 
                 <div className="inline-block bg-[#E4DFD3] px-8 py-4 rounded-lg">
-                    <p className="text-xl md:text-2xl font-bold text-[#2B2929]">
+                    <p className="text-xl md:text-2xl font-bold text-[#8b1a1a]">
                         What all successful clients have in common is not talent — it is commitment.
                     </p>
                 </div>

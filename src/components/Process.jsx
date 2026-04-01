@@ -81,16 +81,16 @@ export default function Process() {
     }, []);
 
     return (
-        <div className="bg-[#E4DFD3]">
+        <div className="bg-[#141414]">
             <section
                 ref={sectionRef}
-                className="max-w-350 mx-auto bg-[#E4DFD3] py-20 px-6 md:px-20"
+                className="max-w-350 mx-auto bg-[#141414] py-20 px-6 md:px-20"
             >
                 <div className=" mx-auto text-center mb-16 lg:mb-24">
-                    <h2 className="text-3xl md:text-5xl font-extrabold text-[#2B2929] leading-tight mb-6">
-                        A Simple, Structured Process That Works
+                    <h2 className="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-6">
+                        A <span className="text-[#8b1a1a]">Simple, Structured</span> Process That Works
                     </h2>
-                    <p className="text-[#3D3838] text-lg md:text-xl font-medium max-w-2xl mx-auto">
+                    <p className="text-white text-lg md:text-xl font-medium max-w-2xl mx-auto">
                         No copy-paste plans. No generic advice. Every decision has a reason.
                     </p>
                 </div>
@@ -168,11 +168,11 @@ export default function Process() {
                                             }}
                                         ></div>
                                         <span
-                                            className={`absolute top-1/2 -translate-y-1/2 text-7xl font-extrabold text-gray-800 transition-opacity duration-300 ${index % 2 === 0 ? "left-32" : "right-32"
+                                            className={`absolute top-1/2 -translate-y-1/2 text-7xl font-extrabold text-[#8b1a1a] transition-opacity duration-300 ${index % 2 === 0 ? "left-32" : "right-32"
                                                 } ${easedProgress > 0.2 ? "opacity-100" : "opacity-30"}`}
                                             style={{
                                                 WebkitTextStroke: "2px #9E9A9A",
-                                                color: "transparent",
+                                                // color: "transparent",
                                             }}
                                         >
                                             {step.id}
@@ -182,7 +182,7 @@ export default function Process() {
                                     <div className="relative w-full lg:w-lg">
                                         <div
                                             className={`hidden lg:block absolute -bottom-3 ${index % 2 === 0 ? "-left-3" : "-right-3"
-                                                } w-full h-full bg-[#2B2929] rounded-lg`}
+                                                } w-full h-full bg-[#8b1a1a] rounded-lg`}
                                         ></div>
 
                                         <div
@@ -195,7 +195,7 @@ export default function Process() {
                                                 <div className="h-px bg-gray-200 grow"></div>
                                             </div>
 
-                                            <h3 className="text-xl md:text-2xl font-bold text-[#2B2929] mb-3">
+                                            <h3 className="text-xl md:text-2xl font-bold text-[#8b1a1a] mb-3">
                                                 {step.title}
                                             </h3>
                                             <p className="text-gray-600 font-medium text-base md:text-lg leading-relaxed">

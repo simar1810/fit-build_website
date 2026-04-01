@@ -9,7 +9,7 @@ const BookingHero = () => {
                     Book a Free Strategy Call
                 </h1>
 
-                <div className="w-24 h-1 bg-[#C82909] mx-auto mb-10"></div>
+                <div className="w-24 h-1 bg-[#8b1a1a] mx-auto mb-10"></div>
 
                 <p className="text-xl md:text-2xl text-gray-300 font-bold leading-relaxed max-w-3xl mx-auto">
                     This is not a sales call.

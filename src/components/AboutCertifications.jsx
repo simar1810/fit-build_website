@@ -39,23 +39,23 @@ const AboutCertifications = () => {
 
     return (
         <>
-            <section className="bg-white text-[#2B2929] py-24 px-6 md:px-20">
+            <section className="bg-[#141414] text-white py-24 px-6 md:px-20">
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-16">
                         <div className="flex justify-center mb-4">
-                            <FaAward className="text-[#C82909] text-3xl" />
+                            <FaAward className="text-[#8b1a1a] text-3xl" />
                         </div>
                         <h2 className="text-3xl sm:text-4xl font-extrabold mb-6 leading-tight">
                             Certifications & Professional Education
                         </h2>
-                        <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                        <p className="text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">
                             While experience is built through decades of training and competition,
                             formal education strengthens structure and accountability.
                         </p>
-                        <p className="text-lg text-gray-600 max-w-3xl mx-auto mt-4 leading-relaxed">
+                        <p className="text-lg text-gray-400 max-w-3xl mx-auto mt-4 leading-relaxed">
                             My coaching approach combines real-world bodybuilding experience with
                             globally recognized certifications from the{" "}
-                            <span className="font-semibold text-[#2B2929]">
+                            <span className="font-semibold text-[#8b1a1a]">
                                 International Sports Sciences Association (ISSA), USA
                             </span>.
                         </p>
@@ -65,7 +65,7 @@ const AboutCertifications = () => {
                         {certifications.map((cert, idx) => (
                             <div
                                 key={idx}
-                                className="flex flex-col sm:flex-row gap-6 bg-[#fafafa] border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow"
+                                className="flex flex-col sm:flex-row gap-6 bg-[#2B2929] border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow"
                             >
                                 <div
                                     className="sm:w-48 sm:min-w-[12rem] h-36 relative rounded overflow-hidden bg-gray-100 cursor-pointer group shrink-0"
@@ -86,16 +86,16 @@ const AboutCertifications = () => {
                                 </div>
 
                                 <div className="flex-1">
-                                    <h3 className="text-xl font-bold text-[#2B2929] mb-1">
+                                    <h3 className="text-xl font-bold text-white mb-1">
                                         {cert.title}
                                     </h3>
-                                    <p className="text-sm text-[#C82909] font-semibold mb-1">
+                                    <p className="text-sm text-[#8b1a1a] font-semibold mb-1">
                                         {cert.org}
                                     </p>
-                                    <p className="text-sm text-gray-500 mb-3">
+                                    <p className="text-sm text-gray-400 mb-3">
                                         Year Issued: {cert.year}
                                     </p>
-                                    <p className="text-gray-600 leading-relaxed">
+                                    <p className="text-white leading-relaxed">
                                         {cert.focus}
                                     </p>
                                 </div>
@@ -104,14 +104,14 @@ const AboutCertifications = () => {
                     </div>
 
                     <div className="mt-16 text-center max-w-3xl mx-auto">
-                        <div className="w-16 h-[2px] bg-[#C82909] mx-auto mb-8" />
-                        <p className="text-xl font-bold text-[#2B2929] mb-2">
+                        <div className="w-16 h-[2px] bg-[#8b1a1a] mx-auto mb-8" />
+                        <p className="text-xl font-bold text-white mb-2">
                             Certifications provide structured knowledge.
                         </p>
-                        <p className="text-xl font-bold text-[#2B2929] mb-6">
+                        <p className="text-xl font-bold text-white mb-6">
                             Experience provides judgment.
                         </p>
-                        <p className="text-lg text-gray-600 leading-relaxed">
+                        <p className="text-lg text-gray-400 leading-relaxed">
                             My coaching integrates both — ensuring that every recommendation is
                             grounded in science and refined through decades of practical application.
                         </p>

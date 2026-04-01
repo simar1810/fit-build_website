@@ -19,7 +19,7 @@ const FinalCTA = () => {
                 <div className="flex flex-col items-center gap-6">
                     <button
                         onClick={() => setIsModalOpen(true)}
-                        className="w-full sm:w-auto px-10 py-5 bg-[#C82909] text-white text-lg font-bold rounded-lg shadow-lg hover:bg-[#a62207] hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3"
+                        className="w-full sm:w-auto px-10 py-5 bg-[#8b1a1a] text-white text-lg font-bold rounded-lg shadow-lg hover:bg-[#a62207] hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3"
                     >
                         Book Your Free Strategy Call <FaArrowRight />
                     </button>

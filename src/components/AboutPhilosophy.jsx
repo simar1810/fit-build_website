@@ -12,7 +12,7 @@ const AboutPhilosophy = () => {
                         <h2 className="text-3xl sm:text-4xl font-extrabold mb-8 leading-tight">
                             My Coaching Philosophy is Simple.
                         </h2>
-                        <div className="w-20 h-1 bg-[#C82909] mb-8"></div>
+                        <div className="w-20 h-1 bg-[#8b1a1a] mb-8"></div>
                         <p className="text-xl font-medium text-gray-300 leading-relaxed mb-8">
                             I don’t chase trends. I don’t promise unrealistic timelines. I don’t sell comfort.
                         </p>
@@ -23,7 +23,7 @@ const AboutPhilosophy = () => {
 
                    
                     <div className="lg:w-1/2 space-y-6">
-                        <div className="bg-[#2B2929] p-6 rounded-lg border-l-4 border-[#C82909] flex items-center gap-6">
+                        <div className="bg-[#2B2929] p-6 rounded-lg border-l-4 border-[#8b1a1a] flex items-center gap-6">
                             <div className="bg-[#1a1a19] p-3 rounded-full shrink-0">
                                 <FaBolt className="text-[#f4f2f2]" size={24} />
                             </div>
@@ -39,7 +39,7 @@ const AboutPhilosophy = () => {
                                 Structure beats guesswork.
                             </p>
                         </div>
-                        <div className="bg-[#2B2929] p-6 rounded-lg border-l-4 border-[#C82909] flex items-center gap-6">
+                        <div className="bg-[#2B2929] p-6 rounded-lg border-l-4 border-[#8b1a1a] flex items-center gap-6">
                             <div className="bg-[#1a1a19] p-3 rounded-full shrink-0">
                                 <FaRunning className="text-[#f4f2f2]" size={24} />
                             </div>
