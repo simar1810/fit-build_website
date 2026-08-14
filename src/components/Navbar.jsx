@@ -68,7 +68,7 @@ const Navbar = () => {
                         onClick={() => setIsModalOpen(true)}
                         className="px-6 py-2.5 font-bold text-sm tracking-wide rounded-md transition-all shadow-lg bg-[#8b1a1a] text-white hover:bg-[#a02006]"
                     >
-                        Book a Call
+                        Book Strategy & Clarity Call
                     </button>
                 </div>
                 
@@ -108,7 +108,7 @@ const Navbar = () => {
                         }}
                         className="px-8 py-3 bg-[#8b1a1a] text-white text-lg font-bold rounded-md"
                     >
-                        Book a Call
+                        Book Strategy & Clarity Call
                     </button>
                 </div>
             )}

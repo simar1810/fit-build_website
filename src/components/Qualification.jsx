@@ -1,8 +1,10 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { FaCheck, FaTimes } from "react-icons/fa";
+import BookingModal from "./BookingModal";
 
 const Qualification = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
     const forYou = [
         "You’re tired of guessing what to eat and how to train",
         "You want a clear structure you can follow long-term",
@@ -58,13 +60,20 @@ const Qualification = () => {
                     </div>
                 </div>
 
-                <div className="mt-16 text-center border-t border-gray-800 pt-10">
+                <div className="mt-16 text-center border-t border-gray-800 pt-10 flex flex-col items-center gap-6">
                     <p className="text-xl md:text-2xl font-bold text-white  mx-auto">
                         This coaching demands effort, honesty, and commitment — and delivers
                         results accordingly.
                     </p>
+                    <button
+                        onClick={() => setIsModalOpen(true)}
+                        className="px-10 py-4 bg-[#8b1a1a] text-white text-lg font-bold rounded-lg shadow-lg hover:bg-[#a62207] hover:scale-105 transition-all duration-300"
+                    >
+                        Book Strategy & Clarity Call
+                    </button>
                 </div>
             </div>
+            <BookingModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </section>
     );
 };

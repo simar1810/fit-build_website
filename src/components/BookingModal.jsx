@@ -7,6 +7,7 @@ const BookingModal = ({ isOpen, onClose }) => {
     const router = useRouter();
     const [scriptLoaded, setScriptLoaded] = React.useState(false);
     const [loading, setLoading] = React.useState(false);
+    const [step, setStep] = React.useState('info');
     const [formData, setFormData] = React.useState({
         name: '',
         email: '',
@@ -34,6 +35,15 @@ const BookingModal = ({ isOpen, onClose }) => {
             }
         };
     }, []);
+
+    React.useEffect(() => {
+        if (isOpen) setStep('info');
+    }, [isOpen]);
+
+    const handleClose = () => {
+        setStep('info');
+        onClose();
+    };
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -108,6 +118,7 @@ const BookingModal = ({ isOpen, onClose }) => {
             if (data.success) {
 
                 setFormData({ name: "", email: "", phone: "" });
+                setStep('info');
                 onClose();
                 router.push("/book?paid=true#calendar-section");
             } else {
@@ -209,65 +220,100 @@ const BookingModal = ({ isOpen, onClose }) => {
 
             <div
                 className="absolute inset-0 bg-black/60 backdrop-blur-sm"
-                onClick={onClose}
+                onClick={handleClose}
             ></div>
 
-            <div className="relative bg-[#1a1a19] rounded-2xl shadow-2xl w-full max-w-md p-6 sm:p-8 animate-fadeIn border border-[#3D3838]">
+            <div className="relative bg-[#1a1a19] rounded-2xl shadow-2xl w-full max-w-md p-6 sm:p-8 animate-fadeIn border border-[#3D3838] max-h-[90vh] overflow-y-auto">
                 <button
-                    onClick={onClose}
+                    onClick={handleClose}
                     className="absolute top-4 right-4 text-gray-400 hover:text-white transition"
                 >
                     <FaTimes size={20} />
                 </button>
 
-                <h2 className="text-2xl font-bold text-center text-[#f4f2f2] mb-2">
-                    Strategy & <span className='text-[#8b1a1a]'>Clarity Call</span>
-                </h2>
-                <p className="text-center text-gray-400 mb-8 text-sm">
-                    ₹1,999 · Fill in your details to proceed
-                </p>
+                {step === 'info' ? (
+                    <>
+                        <h2 className="text-xl sm:text-2xl font-bold text-center text-[#8b1a1a] mb-4 pr-6 leading-tight">
+                            Build with Jehangir Strategy & Clarity Call — ₹1,999
+                        </h2>
+                        <div className="space-y-4 text-sm sm:text-base text-gray-300 font-medium leading-relaxed mb-8">
+                            <p>
+                                A focused 1-on-1 video session to assess your current situation, goals, identify what’s holding you back, and define the right path forward.
+                            </p>
+                            <p>
+                                The ₹1,999 fee ensures the call is reserved for individuals who are serious about making a meaningful transformation.
+                            </p>
+                            <p>
+                                The ₹1,999 fee is fully adjusted against your coaching investment if you decide to work with me.
+                            </p>
+                        </div>
+                        <button
+                            type="button"
+                            onClick={() => setStep('details')}
+                            className="w-full bg-[#8b1a1a] text-white font-bold py-3 rounded-lg shadow-lg hover:bg-[#a02006] transform hover:-translate-y-0.5 transition duration-200"
+                        >
+                            Continue to Book
+                        </button>
+                    </>
+                ) : (
+                    <>
+                        <h2 className="text-2xl font-bold text-center text-[#f4f2f2] mb-2">
+                            Strategy & <span className='text-[#8b1a1a]'>Clarity Call</span>
+                        </h2>
+                        <p className="text-center text-gray-400 mb-8 text-sm">
+                            ₹1,999 · Fill in your details to proceed
+                        </p>
 
-                <form className="space-y-4" onSubmit={openRazorpay}>
-                    <div>
-                        <input
-                            type="text"
-                            name="name"
-                            value={formData.name}
-                            onChange={handleChange}
-                            placeholder="Name"
-                            className="w-full px-4 py-3 bg-[#2B2929] border border-[#3D3838] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C82909]/50 placeholder-gray-500 text-white transition-all"
-                        />
-                    </div>
-                    <div>
-                        <input
-                            type="email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleChange}
-                            placeholder="Email"
-                            className="w-full px-4 py-3 bg-[#2B2929] border border-[#3D3838] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C82909]/50 placeholder-gray-500 text-white transition-all"
-                        />
-                    </div>
-                    <div>
-                        <input
-                            type="tel"
-                            name="phone"
-                            value={formData.phone}
-                            onChange={handleChange}
-                            placeholder="Phone Number"
-                            maxLength={10}
-                            className="w-full px-4 py-3 bg-[#2B2929] border border-[#3D3838] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C82909]/50 placeholder-gray-500 text-white transition-all"
-                        />
-                    </div>
+                        <form className="space-y-4" onSubmit={openRazorpay}>
+                            <div>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    value={formData.name}
+                                    onChange={handleChange}
+                                    placeholder="Name"
+                                    className="w-full px-4 py-3 bg-[#2B2929] border border-[#3D3838] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C82909]/50 placeholder-gray-500 text-white transition-all"
+                                />
+                            </div>
+                            <div>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    value={formData.email}
+                                    onChange={handleChange}
+                                    placeholder="Email"
+                                    className="w-full px-4 py-3 bg-[#2B2929] border border-[#3D3838] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C82909]/50 placeholder-gray-500 text-white transition-all"
+                                />
+                            </div>
+                            <div>
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    value={formData.phone}
+                                    onChange={handleChange}
+                                    placeholder="Phone Number"
+                                    maxLength={10}
+                                    className="w-full px-4 py-3 bg-[#2B2929] border border-[#3D3838] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C82909]/50 placeholder-gray-500 text-white transition-all"
+                                />
+                            </div>
 
-                    <button
-                        type="submit"
-                        disabled={loading}
-                        className="w-full bg-[#8b1a1a] text-white font-bold py-3 rounded-lg shadow-lg hover:bg-[#a02006] transform hover:-translate-y-0.5 transition duration-200 mt-6 disabled:opacity-50 disabled:cursor-not-allowed"
-                    >
-                        {loading ? 'Processing...' : 'Pay ₹1,999 & Book'}
-                    </button>
-                </form>
+                            <button
+                                type="submit"
+                                disabled={loading}
+                                className="w-full bg-[#8b1a1a] text-white font-bold py-3 rounded-lg shadow-lg hover:bg-[#a02006] transform hover:-translate-y-0.5 transition duration-200 mt-6 disabled:opacity-50 disabled:cursor-not-allowed"
+                            >
+                                {loading ? 'Processing...' : 'Pay ₹1,999 & Book'}
+                            </button>
+                            <button
+                                type="button"
+                                onClick={() => setStep('info')}
+                                className="w-full text-gray-400 text-sm hover:text-white transition"
+                            >
+                                Back
+                            </button>
+                        </form>
+                    </>
+                )}
             </div>
         </div>
     );

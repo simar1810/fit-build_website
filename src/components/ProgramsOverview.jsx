@@ -1,9 +1,11 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
+import BookingModal from "./BookingModal";
 
 const ProgramsOverview = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
     const programs = [
         {
             title: "1:1 Body Transformation Coaching",
@@ -56,7 +58,17 @@ const ProgramsOverview = () => {
                         </div>
                     ))}
                 </div>
+
+                <div className="mt-14 text-center">
+                    <button
+                        onClick={() => setIsModalOpen(true)}
+                        className="px-10 py-4 bg-[#8b1a1a] text-white text-lg font-bold rounded-lg shadow-lg hover:bg-[#a62207] hover:scale-105 transition-all duration-300 inline-flex items-center gap-3"
+                    >
+                        Book Strategy & Clarity Call <FaArrowRight />
+                    </button>
+                </div>
             </div>
+            <BookingModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </section>
     );
 };

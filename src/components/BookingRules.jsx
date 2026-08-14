@@ -27,9 +27,9 @@ const BookingRules = () => {
                         </h3>
                         <ul className="space-y-4">
                             {[
-                                "Assess your current situation and goals",
-                                "Identify what’s holding you back",
-                                "Define the right path forward and whether coaching is a fit"
+                                "Discuss your current condition and goals",
+                                "Understand your lifestyle, challenges, and constraints",
+                                "Assess whether my coaching approach is the right fit for you"
                             ].map((item, i) => (
                                 <li key={i} className="flex items-start gap-3 text-lg font-medium text-gray-400">
                                     <span className="w-1.5 h-1.5 bg-green-600 rounded-full mt-2.5 shrink-0"></span>
