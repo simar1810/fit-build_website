@@ -31,12 +31,27 @@ const Hero = () => {
               No guesswork. No shortcuts. Just proven systems built on real experience.
             </p>
 
+            <div className="mt-6 sm:mt-8 w-full sm:w-[90%] md:w-[90%] mx-auto lg:w-[90%] lg:mx-0 space-y-3">
+              <p className="text-lg sm:text-xl md:text-2xl lg:text-xl xl:text-2xl font-extrabold text-[#8b1a1a] leading-tight">
+                Build with Jehangir Strategy & Clarity Call — ₹1,999
+              </p>
+              <p className="text-sm sm:text-base md:text-lg text-gray-300 font-medium leading-relaxed">
+                (A focused 1-on-1 video session to assess your current situation, goals, identify what’s holding you back, and define the right path forward.)
+              </p>
+              <p className="text-sm sm:text-base text-gray-400 font-medium leading-relaxed">
+                The ₹1,999 fee ensures the call is reserved for individuals who are serious about making a meaningful transformation.
+              </p>
+              <p className="text-sm sm:text-base text-gray-400 font-medium leading-relaxed">
+                The ₹1,999 fee is fully adjusted against your coaching investment if you decide to work with me.
+              </p>
+            </div>
+
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mt-8 sm:mt-10">
               <button
                 onClick={() => setIsModalOpen(true)}
                 className="px-8 sm:px-10 py-3 sm:py-4 bg-[#8b1a1a] text-[#f4f2f2] text-sm sm:text-base md:text-lg font-extrabold shadow hover:bg-[#1a1a19] transition flex items-center justify-center gap-3 rounded-md"
               >
-                Book Strategy & Clarity Call
+                Book Strategy & Clarity Call — ₹1,999
               </button>
               <button
                 onClick={() => document.getElementById("testimonials")?.scrollIntoView({ behavior: "smooth" })}
