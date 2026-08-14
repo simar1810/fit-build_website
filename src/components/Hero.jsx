@@ -36,7 +36,7 @@ const Hero = () => {
                 onClick={() => setIsModalOpen(true)}
                 className="px-8 sm:px-10 py-3 sm:py-4 bg-[#8b1a1a] text-[#f4f2f2] text-sm sm:text-base md:text-lg font-extrabold shadow hover:bg-[#1a1a19] transition flex items-center justify-center gap-3 rounded-md"
               >
-                Book a Free Strategy Call
+                Book Strategy & Clarity Call
               </button>
               <button
                 onClick={() => document.getElementById("testimonials")?.scrollIntoView({ behavior: "smooth" })}

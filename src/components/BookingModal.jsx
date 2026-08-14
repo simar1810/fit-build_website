@@ -67,7 +67,7 @@ const BookingModal = ({ isOpen, onClose }) => {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
-                        amount: 199,
+                        amount: 1999,
                         // note: { client: "Fit & Build" },
                         // type: "Consultation",
                     }),
@@ -148,7 +148,7 @@ const BookingModal = ({ isOpen, onClose }) => {
                 amount: order.amount,
                 currency: order.currency || "INR",
                 name: "Fit & Build",
-                description: "Strategy Call Booking",
+                description: "Strategy & Clarity Call",
                 image: "/logo-app.png",
                 order_id: order.id,
                 handler: async function (response) {
@@ -176,7 +176,7 @@ const BookingModal = ({ isOpen, onClose }) => {
                     contact: formData.phone,
                 },
                 notes: {
-                    type: "Strategy Call",
+                    type: "Strategy & Clarity Call",
                     validity: "single consultation",
                 },
                 theme: {
@@ -221,10 +221,10 @@ const BookingModal = ({ isOpen, onClose }) => {
                 </button>
 
                 <h2 className="text-2xl font-bold text-center text-[#f4f2f2] mb-2">
-                    Book Your <span className='text-[#8b1a1a]'>Consultation</span>
+                    Strategy & <span className='text-[#8b1a1a]'>Clarity Call</span>
                 </h2>
                 <p className="text-center text-gray-400 mb-8 text-sm">
-                    Fill in your details below to proceed
+                    ₹1,999 · Fill in your details to proceed
                 </p>
 
                 <form className="space-y-4" onSubmit={openRazorpay}>
@@ -265,7 +265,7 @@ const BookingModal = ({ isOpen, onClose }) => {
                         disabled={loading}
                         className="w-full bg-[#8b1a1a] text-white font-bold py-3 rounded-lg shadow-lg hover:bg-[#a02006] transform hover:-translate-y-0.5 transition duration-200 mt-6 disabled:opacity-50 disabled:cursor-not-allowed"
                     >
-                        {loading ? 'Processing...' : 'Pay ₹199 & Book'}
+                        {loading ? 'Processing...' : 'Pay ₹1,999 & Book'}
                     </button>
                 </form>
             </div>

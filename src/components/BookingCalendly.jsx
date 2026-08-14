@@ -40,7 +40,7 @@ const BookingCalendly = () => {
                                 onClick={() => setIsModalOpen(true)}
                                 className="px-10 py-4 bg-[#8b1a1a] text-white text-lg font-bold rounded-md shadow-lg hover:bg-[#a02006] transition-all transform hover:-translate-y-1"
                             >
-                                Book a Free Strategy Call
+                                Book Strategy & Clarity Call — ₹1,999
                             </button>
                         </div>
                     )}

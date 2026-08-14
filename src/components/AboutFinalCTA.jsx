@@ -29,7 +29,7 @@ const AboutFinalCTA = () => {
                         onClick={() => setIsModalOpen(true)}
                         className="w-full sm:w-auto px-10 py-5 bg-[#8b1a1a] text-white text-lg font-bold rounded-lg shadow-lg hover:bg-[#a62207] hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3"
                     >
-                        Book a Free Strategy Call <FaArrowRight />
+                        Book Strategy & Clarity Call — ₹1,999 <FaArrowRight />
                     </button>
                     <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">
                         Come prepared to be truthful about your habits, effort, and expectations.

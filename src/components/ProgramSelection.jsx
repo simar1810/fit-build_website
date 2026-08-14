@@ -56,7 +56,7 @@ const ProgramSelection = () => {
                         onClick={() => setIsModalOpen(true)}
                         className="w-full sm:w-auto px-10 py-5 bg-[#8b1a1a] text-white text-lg font-bold rounded-lg shadow-lg hover:bg-[#a62207] hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3 uppercase tracking-wide"
                     >
-                        Book a Free Strategy Call <FaArrowRight />
+                        Book Strategy & Clarity Call — ₹1,999 <FaArrowRight />
                     </button>
                 </div>
             </div>
