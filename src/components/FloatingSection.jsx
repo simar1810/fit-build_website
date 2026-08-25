@@ -1,7 +1,7 @@
 import React from "react";
 
 const FloatingSection = () => {
-  const words = ["Transformation", "Strength", "Discipline", "Physique", "Longevity", "Vitality", "Endurance", "Wellness", "Balance", "Energy"];
+  const words = ["BODYBUILDING", "MUSCLE", "STRENGTH", "PHYSIQUE", "LEAN", "DISCIPLINE", "TRANSFORMATION", "CONFIDENCE", "MEN 35+", "BEYOND ORDINARY"];
   
   return (
     <div className="bg-[#8b1a1a] z-20 h-20 md:h-25 flex items-center w-full text-white font-extrabold overflow-hidden py-6">

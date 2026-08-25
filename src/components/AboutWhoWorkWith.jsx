@@ -4,10 +4,12 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const AboutWhoWorkWith = () => {
     const clients = [
-        "Busy professionals who want fat loss, muscle, and confidence",
-        "Individuals struggling with lifestyle-related health issues",
-        "People who are tired of starting over repeatedly",
-        "Serious trainees and competitive athletes"
+        "Men over 35 who already train — or have trained before",
+        "Men who want to build visible muscle and get lean",
+        "Men who want a stronger, more impressive body",
+        "Men who have struggled with inconsistent training, nutrition or progress",
+        "Experienced trainees who want more advanced bodybuilding coaching",
+        "Competitive bodybuilders preparing for the stage",
     ];
 
     return (
@@ -28,7 +30,7 @@ const AboutWhoWorkWith = () => {
 
                 <div className="inline-block bg-[#E4DFD3] px-8 py-4 rounded-lg">
                     <p className="text-xl md:text-2xl font-bold text-[#8b1a1a]">
-                        What all successful clients have in common is not talent — it is commitment.
+                        What successful clients have in common is not talent. It is commitment to the process.
                     </p>
                 </div>
             </div>

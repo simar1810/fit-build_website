@@ -46,7 +46,7 @@ const BookingRules = () => {
                         </h3>
                         <ul className="space-y-4">
                             {[
-                                "A free coaching session",
+                                "An unpaid coaching or advice session",
                                 "A place to collect tips or shortcuts",
                                 "A guarantee of acceptance into coaching"
                             ].map((item, i) => (

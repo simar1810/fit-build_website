@@ -159,8 +159,8 @@ const BookingModal = ({ isOpen, onClose }) => {
                 amount: order.amount,
                 currency: order.currency || "INR",
                 name: "Fit & Build",
-                description: "Strategy & Clarity Call",
-                image: "/logo-app.png",
+                description: "Strategy Call",
+                image: "/logo-fitnbuild.png",
                 order_id: order.id,
                 handler: async function (response) {
                     if (!response.razorpay_payment_id) {
@@ -187,7 +187,7 @@ const BookingModal = ({ isOpen, onClose }) => {
                     contact: formData.phone,
                 },
                 notes: {
-                    type: "Strategy & Clarity Call",
+                    type: "Strategy Call",
                     validity: "single consultation",
                 },
                 theme: {
@@ -234,17 +234,17 @@ const BookingModal = ({ isOpen, onClose }) => {
                 {step === 'info' ? (
                     <>
                         <h2 className="text-xl sm:text-2xl font-bold text-center text-[#8b1a1a] mb-4 pr-6 leading-tight">
-                            Build with Jehangir Strategy & Clarity Call — ₹1,999
+                            Strategy Call — ₹1,999
                         </h2>
                         <div className="space-y-4 text-sm sm:text-base text-gray-300 font-medium leading-relaxed mb-8">
                             <p>
-                                A focused 1-on-1 video session to assess your current situation, goals, identify what’s holding you back, and define the right path forward.
+                                A focused 1-on-1 video session to assess your current situation, goals, identify what&apos;s holding you back, and define the right path forward.
                             </p>
                             <p>
                                 The ₹1,999 fee ensures the call is reserved for individuals who are serious about making a meaningful transformation.
                             </p>
                             <p>
-                                The ₹1,999 fee is fully adjusted against your coaching investment if you decide to work with me.
+                                The ₹1,999 Strategy Call fee is fully adjustable against your coaching fees if you decide to proceed with a coaching program.
                             </p>
                         </div>
                         <button
@@ -258,7 +258,7 @@ const BookingModal = ({ isOpen, onClose }) => {
                 ) : (
                     <>
                         <h2 className="text-2xl font-bold text-center text-[#f4f2f2] mb-2">
-                            Strategy & <span className='text-[#8b1a1a]'>Clarity Call</span>
+                            Strategy <span className='text-[#8b1a1a]'>Call</span>
                         </h2>
                         <p className="text-center text-gray-400 mb-8 text-sm">
                             ₹1,999 · Fill in your details to proceed

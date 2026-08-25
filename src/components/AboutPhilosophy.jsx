@@ -13,11 +13,14 @@ const AboutPhilosophy = () => {
                             My Coaching Philosophy is Simple.
                         </h2>
                         <div className="w-20 h-1 bg-[#8b1a1a] mb-8"></div>
-                        <p className="text-xl font-medium text-gray-300 leading-relaxed mb-8">
-                            I don’t chase trends. I don’t promise unrealistic timelines. I don’t sell comfort.
+                        <p className="text-xl font-medium text-gray-300 leading-relaxed mb-4">
+                            I don&apos;t chase trends. I don&apos;t promise unrealistic timelines. I don&apos;t sell comfort.
+                        </p>
+                        <p className="text-lg text-gray-400 leading-relaxed mb-4">
+                            I build structured bodybuilding systems that account for your training experience, recovery, lifestyle, nutrition and goals.
                         </p>
                         <p className="text-lg text-gray-400 leading-relaxed">
-                            I build systems that clients can follow — even with busy schedules, work stress, travel, and family responsibilities.
+                            The goal is not to live like a professional bodybuilder. The goal is to use bodybuilding principles intelligently within a real life — including work, travel, family and other responsibilities.
                         </p>
                     </div>
 

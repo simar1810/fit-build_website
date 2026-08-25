@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import BrandLogo from "./BrandLogo";
 import { FaInstagram } from "react-icons/fa";
 // import { LuFacebook } from "react-icons/lu";
 import { useState } from "react";
@@ -110,17 +110,9 @@ export default function Footer() {
         <div className="border border-[#FFFFFF6B] absolute md:left-1/2 md:-translate-x-1/2 md:h-full hidden md:block"></div>
 
         <div className="text-white flex flex-col justify-start items-center md:items-start text-center md:text-left max-w-3xl md:w-2xs lg:w-xl relative">
-          <Image
-            src="/logo-app.png"
-            alt="footer-left"
-            width={400}
-            height={400}
-            className="w-36 sm:w-44 lg:w-52"
-          />
+          <BrandLogo size="large" className="mb-4" />
           <p className="font-medium mt-4 sm:mt-5 md:mt-0 text-sm sm:text-base xl:text-lg leading-relaxed text-center md:text-left max-w-sm lg:max-w-md xl:max-w-lg">
-            At Fit & Build, we believe in empowering every individual to live a balanced,
-            healthy, and fulfilled life. Through expert guidance, nutrition, and a supportive
-            community, we help you achieve lasting transformation—inside and out.
+            Bodybuilding-based transformation for men over 35 who want to build muscle, get lean, and become stronger, confident men. Beyond ordinary.
           </p>
         </div>
 

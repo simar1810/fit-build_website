@@ -13,12 +13,12 @@ const ProgramSelection = () => {
                     <FaQuestionCircle className="text-[#8b1a1a] text-5xl" />
                 </div>
 
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-8 leading-tight">
-                    Not Sure Which Program Is Right for You?
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-8 leading-tight uppercase">
+                    Not Sure Which Coaching Path Is Right for You?
                 </h2>
 
                 <p className="text-xl md:text-2xl font-medium text-gray-300 mb-10 leading-relaxed">
-                    That’s exactly what the strategy call is for.
+                    That&apos;s exactly what the Strategy Call is designed to determine.
                 </p>
 
                 <div className="bg-[#2B2929] p-8 md:p-10 rounded-xl mb-12 shadow-xl border border-gray-700 max-w-2xl mx-auto text-left">
@@ -26,28 +26,26 @@ const ProgramSelection = () => {
                         During the call, we discuss:
                     </h3>
                     <ul className="space-y-4 text-lg text-gray-300">
-                        <li className="flex items-center gap-3">
-                            <span className="w-2 h-2 bg-[#8b1a1a] rounded-full"></span>
-                            Your current condition
-                        </li>
-                        <li className="flex items-center gap-3">
-                            <span className="w-2 h-2 bg-[#8b1a1a] rounded-full"></span>
-                            Your goals
-                        </li>
-                        <li className="flex items-center gap-3">
-                            <span className="w-2 h-2 bg-[#8b1a1a] rounded-full"></span>
-                            Your lifestyle and constraints
-                        </li>
-                        <li className="flex items-center gap-3">
-                            <span className="w-2 h-2 bg-[#8b1a1a] rounded-full"></span>
-                            Your level of commitment
-                        </li>
+                        {[
+                            "Your current physique and training status",
+                            "Your bodybuilding and transformation goals",
+                            "Your training history",
+                            "Your nutrition and lifestyle",
+                            "Your biggest obstacles",
+                            "Your level of commitment",
+                            "The most appropriate coaching path for you",
+                        ].map((item) => (
+                            <li key={item} className="flex items-center gap-3">
+                                <span className="w-2 h-2 bg-[#8b1a1a] rounded-full"></span>
+                                {item}
+                            </li>
+                        ))}
                     </ul>
                 </div>
 
-                <div className="text-lg text-gray-300 mb-12 leading-relaxed">
+                <div className="text-lg text-gray-300 mb-12 leading-relaxed max-w-3xl mx-auto">
                     <p>
-                        Based on that, I’ll recommend the most appropriate coaching path — or tell you honestly if this isn’t the right fit.
+                        If I believe my coaching is the right fit, I&apos;ll explain the appropriate next step. If I believe another approach would serve you better — or that we aren&apos;t the right fit — I&apos;ll tell you honestly.
                     </p>
                 </div>
 
@@ -56,7 +54,7 @@ const ProgramSelection = () => {
                         onClick={() => setIsModalOpen(true)}
                         className="w-full sm:w-auto px-10 py-5 bg-[#8b1a1a] text-white text-lg font-bold rounded-lg shadow-lg hover:bg-[#a62207] hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3 uppercase tracking-wide"
                     >
-                        Book Strategy & Clarity Call <FaArrowRight />
+                        Book Your Strategy Call <FaArrowRight />
                     </button>
                 </div>
             </div>
