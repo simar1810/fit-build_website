@@ -28,7 +28,7 @@ const AboutExpectations = () => {
 
                 <div className="mt-12">
                     <p className="text-2xl md:text-3xl font-black text-[#8b1a1a] uppercase tracking-wide">
-                        This approach is not for everyone — but it works.
+                        This approach is not for everyone. It is for men who are prepared to take responsibility for their results.
                     </p>
                 </div>
             </div>

@@ -5,13 +5,19 @@ const AboutJourney = () => {
     return (
         <section className="bg-[#141414] text-[#8b1a1a] py-20 px-6 md:px-20">
             <div className=" mx-auto">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-10 leading-tight text-center text-white">
-                    <span className="text-[#8b1a1a]">My Journey</span> in Fitness Spans Over 12 Years
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-10 leading-tight text-center text-white uppercase">
+                    <span className="text-[#8b1a1a]">My Transformation</span> Started at 44
                 </h2>
 
                 <div className="text-lg md:text-xl font-medium space-y-8 leading-relaxed text-white ">
                     <p>
-                        I have trained consistently, competed on stage, faced setbacks, refined methods, and learned firsthand what works — and what doesn’t. I have experienced fat gain, fat loss, muscle building, contest preparation, and the physical and mental demands that come with each phase.
+                        My transformation did not begin at 18. It began at 44.
+                    </p>
+                    <p>
+                        I started overweight and out of shape. By 46, I had built a six-pack. At 48, I stepped on stage. I went on to compete at the national level — and I&apos;m still training and building my physique today at 56.
+                    </p>
+                    <p>
+                        Along the way, I&apos;ve experienced fat loss, muscle building, hypertrophy training, contest preparation, setbacks, plateaus and the physical and mental demands of transforming a mature body.
                     </p>
 
                     <div>
@@ -24,7 +30,7 @@ const AboutJourney = () => {
                     </div>
 
                     <p className="text-white">
-                        At 56, I continue to train and compete — not to impress anyone, but because I believe a coach must embody the standards he expects from his clients.
+                        At 56, I continue to train and build. Not because I believe transformation has an expiry date — but because I believe a coach should embody the standards he expects from his clients.
                     </p>
                 </div>
             </div>

@@ -4,7 +4,7 @@ import { FaCheck, FaTimes } from "react-icons/fa";
 
 const AboutDifferentiation = () => {
     const precisionPoints = [
-        "Personalized",
+        "Personalised",
         "Structured",
         "Adjusted based on real feedback",
         "Built for sustainability"
