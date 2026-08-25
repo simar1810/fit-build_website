@@ -110,7 +110,7 @@ export default function Footer() {
         <div className="border border-[#FFFFFF6B] absolute md:left-1/2 md:-translate-x-1/2 md:h-full hidden md:block"></div>
 
         <div className="text-white flex flex-col justify-start items-center md:items-start text-center md:text-left max-w-3xl md:w-2xs lg:w-xl relative">
-          <BrandLogo size="large" className="mb-4" />
+          <BrandLogo size="large" onDark className="mb-4" />
           <p className="font-medium mt-4 sm:mt-5 md:mt-0 text-sm sm:text-base xl:text-lg leading-relaxed text-center md:text-left max-w-sm lg:max-w-md xl:max-w-lg">
             Bodybuilding-based transformation for men over 35 who want to build muscle, get lean, and become stronger, confident men. Beyond ordinary.
           </p>

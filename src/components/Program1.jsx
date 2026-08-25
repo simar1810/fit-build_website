@@ -49,10 +49,10 @@ const Program1 = () => {
                             {[
                                 "Personalised bodybuilding training program",
                                 "Personalised nutrition strategy",
-                                "Weekly check-ins and progress reviews",
+                                "Training and nutrition adjustments based on progress",
+                                "Weekly check-ins",
                                 "Progress tracking",
                                 "Accountability and direct coaching support",
-                                "Training and nutrition adjustments based on progress",
                                 "Recovery and lifestyle guidance",
                                 "Ongoing program optimisation",
                             ].map((item, i) => (

@@ -14,7 +14,7 @@ const Hero = () => {
           <div className="relative lg:absolute max-w-4xl mx-auto lg:mx-0 z-10 lg:pb-18 text-center lg:text-left xl:pb-28 2xl:pb-20 sm:px-0 mb-10 lg:mb-0">
 
             <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-4xl xl:text-[2.75rem] font-extrabold leading-tight text-white uppercase tracking-tight">
-              BUILD THE BODY.<br className="sm:hidden" /> <span className="text-[#8b1a1a]">BECOME THE MAN.</span>
+              BUILD THE BODY.<br className="sm:hidden" /> <span className="text-[#8b1a1a]">BUILD THE MAN.</span>
             </h1>
 
             <p className="mt-4 sm:mt-6 md:mt-8 w-full sm:w-[90%] md:w-[90%] mx-auto lg:w-[90%] lg:mx-0 text-base md:text-xl lg:text-lg font-bold text-white leading-relaxed">

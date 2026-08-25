@@ -31,11 +31,13 @@ const Navbar = () => {
     return (
         <header
             className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-                scrolled ? "bg-[#1a1a19]/95 backdrop-blur-md shadow-lg border-b border-white/5 py-2" : "bg-gradient-to-b from-black/80 to-transparent py-3"
+                scrolled
+                    ? "bg-white shadow-md border-b border-black/5 py-2"
+                    : "bg-white border-b border-black/5 py-3"
             }`}
         >
-            <div className="max-w-7xl mx-auto px-5 md:px-10 flex justify-between items-center">
-                <Link href="/" className="hover:opacity-90 transition-opacity">
+            <div className="max-w-7xl mx-auto px-5 md:px-10 flex justify-between items-center gap-4">
+                <Link href="/" className="hover:opacity-95 transition-opacity shrink-0" aria-label="Fit & Build home">
                     <BrandLogo />
                 </Link>
 
@@ -46,8 +48,8 @@ const Navbar = () => {
                             href={link.href}
                             className={`text-sm font-bold uppercase tracking-wider transition-colors ${
                                 pathname === link.href
-                                    ? "text-[#C82909]"
-                                    : "text-white/70 hover:text-white"
+                                    ? "text-[#8b1a1a]"
+                                    : "text-[#2b2929]/70 hover:text-[#1a1a19]"
                             }`}
                         >
                             {link.name}
@@ -58,7 +60,7 @@ const Navbar = () => {
                 <div className="hidden md:block">
                     <button
                         onClick={() => setIsModalOpen(true)}
-                        className="px-5 py-2.5 font-bold text-sm tracking-wide rounded-md transition-all shadow-lg bg-[#8b1a1a] text-white hover:bg-[#a02006] uppercase"
+                        className="px-5 py-2.5 font-bold text-sm tracking-wide rounded-md transition-all shadow-md bg-[#8b1a1a] text-white hover:bg-[#a02006] uppercase"
                     >
                         Book Your Strategy Call
                     </button>
@@ -69,28 +71,30 @@ const Navbar = () => {
                     onClick={() => setIsOpen(!isOpen)}
                     aria-label="Toggle menu"
                 >
-                    <FaBars className="text-white" />
+                    <FaBars className="text-[#1a1a19]" />
                 </button>
             </div>
 
             {isOpen && (
-                <div className="fixed inset-0 bg-[#1a1a19] z-50 flex flex-col items-center justify-center space-y-8">
+                <div className="fixed inset-0 bg-white z-50 flex flex-col items-center justify-center space-y-8">
                     <button
-                        className="absolute top-6 right-6 text-white text-3xl"
+                        className="absolute top-6 right-6 text-[#1a1a19] text-3xl"
                         onClick={() => setIsOpen(false)}
                         aria-label="Close menu"
                     >
                         <FaTimes />
                     </button>
 
-                    <BrandLogo className="mb-4" />
+                    <BrandLogo className="mb-4" size="large" />
 
                     {navLinks.map((link) => (
                         <Link
                             key={link.name}
                             href={link.href}
                             onClick={() => setIsOpen(false)}
-                            className="text-2xl font-bold text-[#bfbfb9] hover:text-white"
+                            className={`text-2xl font-bold ${
+                                pathname === link.href ? "text-[#8b1a1a]" : "text-[#2b2929] hover:text-[#8b1a1a]"
+                            }`}
                         >
                             {link.name}
                         </Link>
