@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { FaCheckCircle } from "react-icons/fa";
 
 const AuthoritySnapshot = () => {
@@ -24,9 +25,18 @@ const AuthoritySnapshot = () => {
                 <p className="text-lg md:text-xl font-medium mb-4 leading-relaxed text-white text-center max-w-4xl mx-auto">
                     I&apos;m not a coach who teaches bodybuilding from theory alone. I&apos;ve lived the transformation myself — starting at 44, building a six-pack at 46, stepping on stage at 48, competing at the national level, and continuing to build my physique in my 50s.
                 </p>
-                <p className="text-lg md:text-xl font-medium mb-6 leading-relaxed text-white text-center max-w-4xl mx-auto">
+                <p className="text-lg md:text-xl font-medium mb-8 leading-relaxed text-white text-center max-w-4xl mx-auto">
                     I coach men over 35 using the principles I&apos;ve learned through years of training, competition, coaching and real-world experience — adapted for the demands of a mature body and a demanding life.
                 </p>
+
+                <Image
+                    src="/home-page-02.jpeg"
+                    alt="Jehangir after competition — medal, trophy and certificate"
+                    width={870}
+                    height={1280}
+                    className="w-full max-w-sm mx-auto h-auto rounded-xl mb-8"
+                    sizes="(max-width: 768px) 100vw, 384px"
+                />
 
                 <p className="text-center text-[#8b1a1a] font-extrabold text-sm md:text-base uppercase tracking-wide mb-10 max-w-3xl mx-auto">
                     Started at 44 · Six-pack at 46 · On stage at 48 · Nationals at 52 · Still building at 56

@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaCheck } from "react-icons/fa";
+import CoachPhoto from "./CoachPhoto";
 
 const Program3 = () => {
     return (
@@ -18,6 +19,12 @@ const Program3 = () => {
                     <p className="text-xl text-gray-400 font-medium leading-relaxed">
                         Selective coaching for experienced bodybuilders preparing to step on stage. This is a specialised service for athletes who are already committed to the demands of competitive bodybuilding.
                     </p>
+                    <CoachPhoto
+                        src="/programs-page-01.jpeg"
+                        alt="Jehangir on stage — contest prep"
+                        className="w-full max-w-xs mx-auto aspect-[930/1384] lg:aspect-auto lg:w-[340px] lg:h-[505px] my-8 rounded-xl"
+                        imageClassName="object-contain bg-[#141414]"
+                    />
                     <p className="mt-4 font-bold text-[#8b1a1a] text-xl uppercase tracking-wide">
                         This program is not for beginners.
                     </p>
