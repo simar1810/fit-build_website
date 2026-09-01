@@ -8,20 +8,19 @@ const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <main className="flex flex-col min-h-[50vh] lg:h-screen lg:max-h-screen bg-[#141414] overflow-hidden relative pt-28 lg:pt-38">
-      <div className="flex flex-col justify-between grow bg-cover bg-center">
-        <section className="relative flex flex-col grow px-5 sm:px-10 lg:px-10 xl:px-8 lg:flex-row items-center justify-start lg:justify-between mx-auto xl:w-full w-full max-w-7xl py-12 lg:py-0">
-          <div className="relative lg:absolute max-w-4xl mx-auto lg:mx-0 z-10 lg:pb-18 text-center lg:text-left xl:pb-28 2xl:pb-20 sm:px-0 mb-10 lg:mb-0">
-
+    <main className="flex flex-col min-h-[50vh] lg:min-h-screen bg-[#141414] overflow-hidden relative pt-28 lg:pt-32">
+      <div className="flex flex-col justify-between grow">
+        <section className="relative flex flex-col lg:flex-row items-center lg:items-center justify-between gap-8 lg:gap-12 mx-auto w-full max-w-7xl px-5 sm:px-10 xl:px-8 py-8 lg:py-0 lg:min-h-[calc(100vh-10rem)]">
+          <div className="w-full lg:w-[48%] z-10 text-center lg:text-left">
             <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-4xl xl:text-[2.75rem] font-extrabold leading-tight text-white uppercase tracking-tight">
               BUILD THE BODY.<br className="sm:hidden" /> <span className="text-[#8b1a1a]">BUILD THE MAN.</span>
             </h1>
 
-            <p className="mt-4 sm:mt-6 md:mt-8 w-full sm:w-[90%] md:w-[90%] mx-auto lg:w-[90%] lg:mx-0 text-base md:text-xl lg:text-lg font-bold text-white leading-relaxed">
+            <p className="mt-4 sm:mt-6 md:mt-8 w-full sm:w-[90%] mx-auto lg:w-full lg:mx-0 text-base md:text-xl lg:text-lg font-bold text-white leading-relaxed">
               Bodybuilding-based transformation for men over 35 who want to build muscle, get lean, and become stronger, confident men.
             </p>
 
-            <p className="mt-3 sm:mt-4 w-full sm:w-[90%] md:w-[90%] mx-auto lg:w-[90%] lg:mx-0 text-sm md:text-lg lg:text-base font-medium text-gray-300 leading-relaxed">
+            <p className="mt-3 sm:mt-4 w-full sm:w-[90%] mx-auto lg:w-full lg:mx-0 text-sm md:text-lg lg:text-base font-medium text-gray-300 leading-relaxed">
               No guesswork. No shortcuts. Just structured bodybuilding coaching built on real experience.
             </p>
 
@@ -41,14 +40,17 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="flex justify-center items-end absolute lg:right-6 xl:right-0 lg:-bottom-17.5 xl:-bottom-22 2xl:-bottom-20">
-            <Image
-              src="/boy-rope.png"
-              alt="Wellness Yoga"
-              width={500}
-              height={500}
-              className="hidden lg:flex lg:w-sm xl:w-100 "
-            />
+          <div className="w-full lg:w-[52%] flex justify-center lg:justify-end">
+            <div className="relative w-full max-w-[420px] h-[420px] sm:h-[480px] lg:h-auto lg:aspect-[2/3] lg:max-h-[820px] overflow-hidden">
+              <Image
+                src="/home-page-01.jpeg"
+                alt="Jehangir at the gym — Fit & Build"
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 420px"
+                className="object-cover object-[center_18%] sm:object-[center_20%] lg:object-top"
+              />
+            </div>
           </div>
         </section>
       </div>
@@ -56,7 +58,7 @@ const Hero = () => {
         <FloatingSection />
       </div>
       <BookingModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
-    </main >
+    </main>
   )
 }
 
